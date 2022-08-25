@@ -1,0 +1,56 @@
+*{
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+.nss{
+position: absolute;
+left: 50%;
+    
+}
+body{
+    background: url('collage.jpg');
+    background-color: #b3b4b6;
+    background-repeat: no-repeat ;
+    background-size: cover;
+}
+.wrapper{
+    display: flex;
+    position: relative;
+}
+.wrapper  .sidebar{
+    position: fixed;
+    width: 200px;
+    height: 100%;
+    background: #000;
+    padding: 30px 0;
+    outline: blue;
+}
+.wrapper  .sidebar  .logo{
+    margin-bottom: 30px;
+    text-align: center;
+}
+.wrapper  .sidebar  .logo  .img{
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: auto;
+}
+
+.wrapper  .sidebar ul li{
+    padding: 20px;
+    border-left: 1px  solid rgba(241, 238, 238, 0.979);
+
+}
+.wrapper .sidebar ul li a {
+    color: #dae1f0;
+    display: block;
+}
+.wrapper  .sidebar ul li :hover{
+    background:#F8D949;
+
+}
