@@ -5,10 +5,21 @@ import instalogo from '../assets/instalogo.png';
 import twitterlogo from '../assets/twitterlogo.png';
 import linkedinlogo from '../assets/linkedinlogo.png';
 import pixmelogo from '../assets/pixmelogo.png';
+import mindtwisterslogo from '../assets/mindtwisterslogo.png'
 const images = [instalogo, twitterlogo, linkedinlogo,linkedinlogo];
 
 
 const EventsSlide = () => {
+
+    const [eventsdetails,setEventdetails]=useState(
+        [
+            {eventtitle:"Mind Twister",eventlogo:mindtwisterslogo,eventdescription:"Mind Twisters is an exciting event to make your brain go stark crazy! This event has 3 rounds to bring out the tycoon in you with a bit of jest. Participate with your pals and have fun by sharing your humorous ideas and an excellent knack for persuading the consumers.",knowmorelink:"",registerlink:""},
+            {eventtitle:"Pixme",eventlogo:pixmelogo,eventdescription:"lorem ipsum",knowmorelink:"",registerlink:""},
+            {eventtitle:"Pixme",eventlogo:pixmelogo,eventdescription:"lorem ipsum",knowmorelink:"",registerlink:""},
+            {eventtitle:"Pixme",eventlogo:pixmelogo,eventdescription:"lorem ipsum",knowmorelink:"",registerlink:""},
+        ]
+    );
+
     const NextArrow = ({ onClick }) => {
         return (
           <div className="arrow next flex items-center z-20 justify-center col-span-1" onClick={onClick}>
@@ -48,69 +59,32 @@ const EventsSlide = () => {
 
                         <div className="owl-carousel  flex flex-col flex-wrap justify-center items-center col-span-10 w-full h-full overflow-hidden">
 
-
-                            <div className="slider-card w-full h-full bg-secondaryblack text-white z-10  sm:w-96 md:w-128 rounded-xl  col-span-3 m-1">
+                            {eventsdetails.map( (event)=>(
+                                    <div className="slider-card w-full h-full bg-secondaryblack text-white z-10  sm:w-96 md:w-128 rounded-xl  col-span-3 m-1">
                                 
-                                <h5 className="mt-5 text-xl font-bold text-center"><b>PIXME</b></h5>
-                                <div className="w-full h-2/5  flex justify-center items-center align-items-center ">
-                                    <img src={pixmelogo} className="w-4/12 object-cover" alt="" />
-                                </div>
-                                <p className="text-center  text-sm sm:text-md px-10 pb-5">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.
-                                </p>
-
-                                <div className="button flex flex-col justify-center items-center">
-                                    
-                                    <button className=" w-2/5 text-sm sm:text-md px-5 py-2 m-2 text-tertiaryblack rounded-lg bg-gradient-to-r from-purple via-grad2 to-yellow drop-shadow-2xl"><a href="https://htmlcss3tutorials.com/owl-carousel-slider-bootstrap-5-example/">KNOW MORE</a></button>
-                                   
-                                    
-                                    <button className="w-2/5 text-sm sm:text-md px-5 py-2 m-2 border-palegreen rounded-lg text-palegreen hover:text-primaryblack hover:bg-palegreen border-2 ">REGISTER</button>
-                                    
-                                </div>
-                                
-                            </div>
-
-                            <div className="slider-card w-full h-full bg-secondaryblack text-white z-10  sm:w-96 md:w-128 rounded-xl  col-span-3 m-1">
-                                
-                                <h5 className="mt-5 text-xl font-bold text-center"><b>PIXME</b></h5>
-                                <div className="w-full h-2/5  flex justify-center items-center align-items-center ">
-                                    <img src={pixmelogo} className="w-4/12 object-cover" alt="" />
-                                </div>
-                                <p className="text-center  text-sm sm:text-md px-10 pb-5">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.
-                                </p>
-
-                                <div className="button flex flex-col justify-center items-center">
-                                    
-                                    <button className=" w-2/5 text-sm sm:text-md px-5 py-2 m-2 text-tertiaryblack rounded-lg bg-gradient-to-r from-purple via-grad2 to-yellow drop-shadow-2xl"><a href="https://htmlcss3tutorials.com/owl-carousel-slider-bootstrap-5-example/">KNOW MORE</a></button>
-                                   
-                                    
-                                    <button className="w-2/5 text-sm sm:text-md px-5 py-2 m-2 border-palegreen rounded-lg text-palegreen hover:text-primaryblack hover:bg-palegreen border-2 ">REGISTER</button>
+                                    <h5 className="mt-5 text-2xl font-bold text-center"><b>{event.eventtitle}</b></h5>
+                                    <div className="w-full h-1/5 my-8 flex justify-center items-center align-items-center ">
+                                        <img src={event.eventlogo} className="w-4/12 object-cover" alt="" />
+                                    </div>
+                                    <p className="text-justify  text-sm sm:text-md px-20 py-2">
+                                        {event.eventdescription}
+                                    </p>
+    
+                                    <div className="button flex flex-col justify-center items-center">
+                                        
+                                        <button className=" w-2/5 text-sm sm:text-md px-5 py-2 m-2 text-tertiaryblack rounded-lg bg-gradient-to-r from-purple via-grad2 to-yellow drop-shadow-2xl"><a href="https://htmlcss3tutorials.com/owl-carousel-slider-bootstrap-5-example/">KNOW MORE</a></button>
+                                       
+                                        
+                                        <button className="w-2/5 text-sm sm:text-md px-5 py-2 m-2 border-palegreen rounded-lg text-palegreen hover:text-primaryblack hover:bg-palegreen border-2 ">REGISTER</button>
+                                        
+                                    </div>
                                     
                                 </div>
-                                
-                            </div>
+                            ))
+                            }
+                           
 
-                            <div className="slider-card w-full h-full bg-secondaryblack text-white z-10  sm:w-96 md:w-128 rounded-xl  col-span-3 m-1">
-                                
-                                <h5 className="mt-5 text-xl font-bold text-center"><b>PIXME</b></h5>
-                                <div className="w-full h-2/5  flex justify-center items-center align-items-center ">
-                                    <img src={pixmelogo} className="w-4/12 object-cover" alt="" />
-                                </div>
-                                <p className="text-center  text-sm sm:text-md px-10 pb-5">
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam temporibus quidem magni qui doloribus quasi natus inventore nisi velit minima.
-                                </p>
-
-                                <div className="button flex flex-col justify-center items-center">
-                                    
-                                    <button className=" w-2/5 text-sm sm:text-md px-5 py-2 m-2 text-tertiaryblack rounded-lg bg-gradient-to-r from-purple via-grad2 to-yellow drop-shadow-2xl"><a href="https://htmlcss3tutorials.com/owl-carousel-slider-bootstrap-5-example/">KNOW MORE</a></button>
-                                   
-                                    
-                                    <button className="w-2/5 text-sm sm:text-md px-5 py-2 m-2 border-palegreen rounded-lg text-palegreen hover:text-primaryblack hover:bg-palegreen border-2 ">REGISTER</button>
-                                    
-                                </div>
-                                
-                            </div>
+                           
 
 
 
