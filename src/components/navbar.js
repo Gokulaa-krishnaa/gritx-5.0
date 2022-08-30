@@ -1,7 +1,7 @@
-import gritxlogo from '../assets/grit x main logo.png';
-import instalogo from '../assets/instalogo.png';
-import twitterlogo from '../assets/twitterlogo.png';
-import linkedinlogo from '../assets/linkedinlogo.png';
+import gritxlogo from '../images/grit x main logo.png';
+import instalogo from '../images/instalogo.png';
+import twitterlogo from '../images/twitterlogo.png';
+import linkedinlogo from '../images/linkedinlogo.png';
 import { useState, useRef } from "react";
 
 const Navbar = () => {
@@ -23,7 +23,7 @@ const Navbar = () => {
         <>
             <header>
                 <nav className="navbar fixed z-10"  ref={navbar}>
-                    <div className="hidden lg:flex fixed bg-tertiaryblack relative h-screen w-3/12 xl:w-4/12 ">
+                    <div className="hidden lg:flex fixed bg-tertiaryblack h-screen w-36 xl:w-40 ">
                         <div className="grid grid-rows-5 w-full">
                             <div className="logo row-span-1 w-full p-5 hover:p-3 mt-5">
                                 <img  src={gritxlogo} className="w-full h-full" />
@@ -40,9 +40,9 @@ const Navbar = () => {
                             </div>
                             <div className="connectus row-span-1 w-full flex justify-center items-center">
                                 <div className='grid grid-cols-3 p-5'>
-                                    <div className='w-4/5 h-5/5 scale-100 hover:scale-125 drop-shadow-3xl'> <img  src={instalogo} className="w-full h-full" /></div>
-                                    <div className='w-4/5 h-5/5 scale-100 hover:scale-125 drop-shadow-3xl'><img  src={linkedinlogo} className="w-full h-full" /></div>
-                                    <div className='w-4/5 h-5/5 scale-100 hover:scale-125 drop-shadow-3xl'> <img  src={twitterlogo} className="w-full h-full" /></div>
+                                    <div className='w-4/5 h-5/5 scale-100 hover:scale-125 drop-shadow-3xl'><a href="https://instagram.com/sairamnss?igshid=YmMyMTA2M2Y="><img  src={instalogo} className="w-full h-full" /></a></div>
+                                    <div className='w-4/5 h-5/5 scale-100 hover:scale-125 drop-shadow-3xl'><a href="https://www.linkedin.com/company/nss-sairam/"><img  src={linkedinlogo} className="w-full h-full" /></a></div>
+                                    <div className='w-4/5 h-5/5 scale-100 hover:scale-125 drop-shadow-3xl'><a href="https://twitter.com/NSSSAIRAM?s=20&t=I-QlWVigzBdfoOMhxAbK0A"><img  src={twitterlogo} className="w-full h-full" /></a></div>
                                 </div>
                                 
                             </div>
@@ -76,7 +76,7 @@ const Navbar = () => {
                 
         </div>
            
-        <div className={isActive?'fixed grid justify-items-start w-full h-screen grid-rows-8 top-0 left-0  bg-primaryblack/50 z-20' :'hidden fixed justify-items-start w-full  h-screen grid-rows-8 top-0 left-0  bg-fadewhite/80 z-20'}  name="menu" ref={navlist} >
+        <div className={isActive?'fixed grid justify-items-start w-full h-screen grid-rows-8 top-0 left-0  bg-primaryblack/90 z-20' :'hidden fixed justify-items-start w-full  h-screen grid-rows-8 top-0 left-0  bg-fadewhite/80 z-20'}  name="menu" ref={navlist} >
             <button onClick={togglenavlist} className="block float-right ml-4 mt-2 p-2 text-base font-semibold"> <svg class="w-6 h-6" fill="none" stroke="#B57E1A" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M6 18L18 6M6 6l12 12"></path></svg></button>
             <div className="w-full grid place-items-center pt-20 pb-80">
                 <a href="#aboutinst" onClick={togglenavlist} className="block mx-12 mt-4  text-lg  font-semibold text-center  text-fadewhite py-2 px-4 hover:text-gold">Home</a>
