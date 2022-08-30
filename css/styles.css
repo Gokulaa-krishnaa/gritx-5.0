@@ -1,0 +1,103 @@
+    body {
+        top: 25%;
+        background-color: #121212;
+    }
+    
+    h2 {
+        color: #7C3DB9;
+    }
+    
+    .heading {
+        margin-top: 5%;
+        margin-left: 25%;
+        display: flex;
+    }
+    
+    .but {
+        display: flex;
+        flex-direction: row;
+        flex-flow: row wrap;
+        max-width: 100%;
+        height: auto;
+    }
+    
+    .main {
+        display: flex;
+        justify-content: center;
+        align-items: center
+    }
+    
+    .stroke {
+        width: 3px;
+        height: 105px;
+        background: #E6BA5B;
+        margin-top: 1.6%;
+        margin-right: 12px;
+        max-width: 100%;
+    }
+    
+    button {
+        background-color: #121212;
+    }
+    
+    .space {
+        width: 100px;
+        height: auto;
+        display: inline-block
+    }
+    
+    button h1 {
+        color: #229D98;
+        font-family: 'Rubik One';
+        font-size: 20px;
+        background-image: url('images/layer.png');
+        object-fit: cover;
+        cursor: pointer;
+        display: inline-block;
+        padding: 15px 32px;
+    }
+    
+    .roundtitle {
+        background-image: url('../images/layer.png');
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    
+    .card {
+        display: flex;
+        margin-top: 2%;
+        margin-bottom: 10%;
+        width: 750px;
+        height: 320px;
+        border-radius: 20px;
+        background: #191919;
+    }
+    
+    .triangle {
+        display: flex;
+    }
+    
+    .content {
+        margin: 1% 7% 7% 7%;
+    }
+    
+    #round1 {
+        display: inline-block;
+    }
+    
+    #round2 {
+        display: none;
+    }
+    
+    #round3 {
+        display: none;
+    }
+    
+    .container {
+        position: relative;
+        width: 500px;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+    }
