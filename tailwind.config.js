@@ -6,6 +6,9 @@ module.exports = {
   theme: {
     
     extend: {
+      fontFamily:{
+        'rubik-one':['Rubik One']
+      },
       spacing:{
         '128':'32rem',
         '150':'45rem',
