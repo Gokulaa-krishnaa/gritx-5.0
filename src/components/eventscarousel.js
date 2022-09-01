@@ -1,84 +1,97 @@
-
-
-import React, { Component } from "react";
+import React, { Component ,useState } from "react";
 import Slider from "react-slick";
-import mindtwisterslogo from '../assets/mindtwisterslogo.png'
+import mindtwisterslogo from '../assets/mindtwisterslogo.png';
+import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 
+import campusambassadorlogo from '../assets/campusambassadorlogo.png'
+import dazeplaylogo from '../assets/dazeplaylogo.PNG'
+import hyperzestlogo from '../assets/hyperzestlogo.png'
 
-export default class SimpleSlider extends Component {
-  render() {
-    const settings = {
-      dots: true,
-      infinite: true,
-      speed: 500,
-      slidesToShow: 1,
-      slidesToScroll: 1
-    };
+const Containers=()=>{
+  
     
-    return (
-        <div className="h-screen w-full lg:w-11/12 float-right bg-primaryblack">
-            <div className="w-8/12 w-full m-auto ">
-                <h2> Single Item</h2>
-                <Slider {...settings}>
-                <div>
-                <div className="slider-card w-full h-full bg-secondaryblack text-white z-10  sm:w-96 md:w-128 rounded-xl  col-span-3 m-1">
-                                
-                                <h5 className="mt-5 text-2xl font-bold text-center"><b>eventtitle</b></h5>
-                                <div className="w-full h-1/5 my-8 flex justify-center items-center align-items-center ">
-                                    <img src={mindtwisterslogo} className="w-4/12 object-cover" alt="" />
-                                </div>
-                                <p className="text-justify  text-sm sm:text-md px-20 py-2">
-                                    eventsdetails.eventdescription
-                                </p>
 
-                                <div className="button flex flex-col justify-center items-center">
-                                    
-                                    <button className=" w-2/5 text-sm sm:text-md px-5 py-2 m-2 text-tertiaryblack rounded-lg bg-gradient-to-r from-purple via-grad2 to-yellow drop-shadow-2xl"><a href="https://htmlcss3tutorials.com/owl-carousel-slider-bootstrap-5-example/">KNOW MORE</a></button>
-                                   
-                                    
-                                    <button className="w-2/5 text-sm sm:text-md px-5 py-2 m-2 border-palegreen rounded-lg text-palegreen hover:text-primaryblack hover:bg-palegreen border-2 ">REGISTER</button>
-                                    
-                                </div>
-                                
-                            </div>
-                </div>
-                <div>
-                <div className="slider-card w-full h-full bg-secondaryblack text-white z-10  sm:w-96 md:w-128 rounded-xl  col-span-3 m-1">
-                                
-                                <h5 className="mt-5 text-2xl font-bold text-center"><b>eventtitle</b></h5>
-                                <div className="w-full h-1/5 my-8 flex justify-center items-center align-items-center ">
-                                    <img src={mindtwisterslogo} className="w-4/12 object-cover" alt="" />
-                                </div>
-                                <p className="text-justify  text-sm sm:text-md px-20 py-2">
-                                    eventsdetails.eventdescription
-                                </p>
+    const settings = {
+       
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        centerMode: true,
+        autoplay: true,
+        autoplaySpeed: 2000,
+        pauseOnHover: true,
+        responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                infinite: true,
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1,
+                initialSlide: 1
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ],
+          
+      };
 
-                                <div className="button flex flex-col justify-center items-center">
-                                    
-                                    <button className=" w-2/5 text-sm sm:text-md px-5 py-2 m-2 text-tertiaryblack rounded-lg bg-gradient-to-r from-purple via-grad2 to-yellow drop-shadow-2xl"><a href="https://htmlcss3tutorials.com/owl-carousel-slider-bootstrap-5-example/">KNOW MORE</a></button>
-                                   
-                                    
-                                    <button className="w-2/5 text-sm sm:text-md px-5 py-2 m-2 border-palegreen rounded-lg text-palegreen hover:text-primaryblack hover:bg-palegreen border-2 ">REGISTER</button>
-                                    
-                                </div>
-                                
-                            </div>
-                </div>
-                <div>
-                    <h3>3</h3>
-                </div>
-                <div>
-                    <h3>4</h3>
-                </div>
-                <div>
-                    <h3>5</h3>
-                </div>
-                <div>
-                    <h3>6</h3>
-                </div>
+      const [eventsdetails,setEventdetails]=useState(
+        [
+            {index:1,eventtitle:"Mind Twister",eventlogo:mindtwisterslogo,eventdescription:"Mind Twisters is an exciting event to make your brain go stark crazy! This event has 3 rounds to bring out the tycoon in you with a bit of jest. ",knowmorelink:"",registerlink:""},
+            {index:2,eventtitle:"Hyper-Zest",eventlogo:hyperzestlogo,eventdescription:"Mind Twisters is an exciting event to make your brain go stark crazy! This event has 3 rounds to bring out the tycoon in you with a bit of jest. ",knowmorelink:"",registerlink:""},
+            {index:3,eventtitle:"Daze-Play",eventlogo:dazeplaylogo,eventdescription:"Mind Twisters is an exciting event to make your brain go stark crazy! This event has 3 rounds to bring out the tycoon in you with a bit of jest. ",knowmorelink:"",registerlink:""},
+            {index:4,eventtitle:"Pixme",eventlogo:campusambassadorlogo,eventdescription:"Mind Twisters is an exciting event to make your brain go stark crazy! This event has 3 rounds to bring out the tycoon in you with a bit of jest. ",knowmorelink:"",registerlink:""},
+        ]
+    );
+
+    return(
+      
+            <div className="w-12/12 h-full mt-5 m-auto ">
+                <Slider {...settings} className="w-full w-full h-full ">
+                { eventsdetails.map((event) => (
+                    <div>
+                    <div index={event.index} className="slider-card w-full h-full    ">
+                           <div className="text-white bg-secondaryblack/50 py-1 md:p-5 m-1 md:m-3  rounded-xl ">     
+                        <h5 className="mt-5 text-xl md:text-2xl font-bold text-center"><b>{event.eventtitle}</b></h5>
+                        <div className="w-full h-1/5 my-2 flex justify-center items-center align-items-center ">
+                            <img src={event.eventlogo} className="w-6/12 object-cover" alt="" />
+                        </div>
+                        <p className="text-center text-sm sm:text-md px-10 md:px-15 py-2">
+                            {event.eventdescription}
+                        </p>
+
+                        <div className="button flex flex-col justify-center items-center my-7 md:my-15">
+                            
+                            <button className=" w-4/5 sm:w-2/5 hover:scale-125 text-xs sm:text-md px-5 py-2 m-2 text-tertiaryblack rounded-lg bg-gradient-to-r from-purple via-grad2 to-yellow drop-shadow-2xl"><a href="https://htmlcss3tutorials.com/owl-carousel-slider-bootstrap-5-example/">KNOW MORE</a></button>
+                            
+                            
+                            <button className="w-4/5 sm:w-2/5  text-xs sm:text-md flex justify-center px-5 py-2 m-2 border-palegreen rounded-lg text-palegreen hover:text-primaryblack hover:bg-palegreen border-2 ">REGISTER</button>
+                            
+                        </div>
+                        </div>  
+                    </div>
+                    </div>
+                ))}
+                
+                
+                           
                 </Slider>
             </div>
-      </div>
+   
     );
-  }
 }
+export default Containers;

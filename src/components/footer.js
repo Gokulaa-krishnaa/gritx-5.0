@@ -1,15 +1,15 @@
 import React from 'react';
-import purple from "../images/hexpurple.png";
-import yellow from "../images/hexyellow.png";
-import nsslogo from "../images/nsslogo.png";
-import seclogo from "../images/seclogo.png";
-import instalogo from '../images/instalogo.png';
-import twitterlogo from '../images/twitterlogo.png';
-import linkedinlogo from '../images/linkedinlogo.png';
+import purple from "../assets/hexpurple.png";
+import yellow from "../assets/hexyellow.png";
+import nsslogo from "../assets/nsslogo.png";
+import seclogo from "../assets/seclogo.png";
+import instalogo from '../assets/instalogo.png';
+import twitterlogo from '../assets/twitterlogo.png';
+import linkedinlogo from '../assets/linkedinlogo.png';
 
 function Footer() {
   return (
-    <div className="bg-[#212121] float-right w-full lg:w-11/12 lg:pl-10 h-full">
+    <div className="bg-[#212121] float-right w-full lg:w-11/12 lg:pl-10 h-full" id="footersection">
       <div className="p-8">
         <a href='https://sairam.edu.in/nss/'><img className="float-left w-20 h-20" src={nsslogo} alt="nsslogo"></img></a>
         <a href='https://sairam.edu.in/'><img className="float-right w-20 h-20" src={seclogo} alt="seclogo"></img></a>

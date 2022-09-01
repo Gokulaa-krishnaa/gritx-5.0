@@ -1,9 +1,9 @@
 import campusambassadorlogo from '../assets/campusambassadorlogo.png'
 
-const Home = () => {
-    return ( 
-        <div className="h-screen float-right w-full lg:w-11/12  bg-grey bg-blurbwclgimg bg-cover bg-no-repeat" id="homesection">
-            <div >
+
+const Campusambassador = () => {
+    return (  
+        <div className="min-h-fit w-full lg:w-11/12 bg-secondaryblack float-right " id="campusambassadorsection">
             <section className="pt-5 w-full h-full my-10 lg:pl-12 xl:pl-14 float-right">
             <div className=" w-10/12 h-full m-auto ">
           
@@ -33,8 +33,8 @@ const Home = () => {
             </div>
             </section>
         </div>
-        </div>
-     );
+
+    );
 }
  
-export default Home;
+export default Campusambassador;

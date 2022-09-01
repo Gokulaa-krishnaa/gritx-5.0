@@ -106,5 +106,5 @@ function Details() {
   );
 }
 
-// bg-no-repeat bg-cover bg-[url('images/layer.png')]
+
 export default Details;

@@ -1,7 +1,7 @@
-import gritxlogo from '../images/grit x main logo.png';
-import instalogo from '../images/instalogo.png';
-import twitterlogo from '../images/twitterlogo.png';
-import linkedinlogo from '../images/linkedinlogo.png';
+import gritxlogo from '../assets/grit x main logo.png';
+import instalogo from '../assets/instalogo.png';
+import twitterlogo from '../assets/twitterlogo.png';
+import linkedinlogo from '../assets/linkedinlogo.png';
 import { useState, useRef } from "react";
 
 const Navbar = () => {
@@ -31,11 +31,11 @@ const Navbar = () => {
                             </div>
                             <div className="navlist  row-span-3">
                                 <ul className='text-white w-full  grid grid-rows-5 justify-center items-center h-full'>
-                                    <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><a href="# ">Home</a></li>
-                                    <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><a href="#">Events</a></li>
-                                    <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><a href="#">Campus <br /> Ambassor</a></li>
-                                    <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><a href="#">About us</a></li>
-                                    <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><a href="#">Contact us</a></li>
+                                    <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><a href="#homesection">Home</a></li>
+                                    <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><a href="#eventssection">Events</a></li>
+                                    <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><a href="#campusambassadorsection">Campus <br /> Ambassor</a></li>
+                                    <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><a href="#footersection">About us</a></li>
+                                    <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><a href="#footersection">Contact us</a></li>
                                 </ul>
                             </div>
                             <div className="connectus row-span-1 w-full flex justify-center items-center">
@@ -79,11 +79,11 @@ const Navbar = () => {
         <div className={isActive?'fixed grid justify-items-start w-full h-screen grid-rows-8 top-0 left-0  bg-primaryblack/90 z-20' :'hidden fixed justify-items-start w-full  h-screen grid-rows-8 top-0 left-0  bg-fadewhite/80 z-20'}  name="menu" ref={navlist} >
             <button onClick={togglenavlist} className="block float-right ml-4 mt-2 p-2 text-base font-semibold"> <svg class="w-6 h-6" fill="none" stroke="#B57E1A" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M6 18L18 6M6 6l12 12"></path></svg></button>
             <div className="w-full grid place-items-center pt-20 pb-80">
-                <a href="#aboutinst" onClick={togglenavlist} className="block mx-12 mt-4  text-lg  font-semibold text-center  text-fadewhite py-2 px-4 hover:text-gold">Home</a>
-                <a href="#aboutinst" onClick={togglenavlist} className="block mx-12 mt-4  text-lg  font-semibold text-center  text-fadewhite py-2 px-4 hover:text-gold">Events</a>
-                <a href="#committee-side-id" onClick={togglenavlist} className="block mx-12 mt-4  text-lg  font-semibold text-center   text-fadewhite py-2 px-4 hover:text-gold">Campus <br /> Ambassor</a>
-                <a href="#topics-of-interest-id" onClick={togglenavlist} className="block mx-12 mt-4  text-lg   font-semibold text-center  text-fadewhite py-2 px-4  hover:text-gold">About us</a>
-                <a href="#dates-to-remember-id" onClick={togglenavlist} className="block mx-12 mt-4  text-lg   font-semibold text-center  text-fadewhite py-2 px-4  hover:text-gold">Contact us</a>
+                <a href="#homesection" onClick={togglenavlist} className="block mx-12 mt-4  text-lg  font-semibold text-center  text-fadewhite py-2 px-4 hover:text-gold">Home</a>
+                <a href="#eventssection" onClick={togglenavlist} className="block mx-12 mt-4  text-lg  font-semibold text-center  text-fadewhite py-2 px-4 hover:text-gold">Events</a>
+                <a href="#campusambassadorsection" onClick={togglenavlist} className="block mx-12 mt-4  text-lg  font-semibold text-center   text-fadewhite py-2 px-4 hover:text-gold">Campus <br /> Ambassor</a>
+                <a href="#footersection" onClick={togglenavlist} className="block mx-12 mt-4  text-lg   font-semibold text-center  text-fadewhite py-2 px-4  hover:text-gold">About us</a>
+                <a href="#footersection" onClick={togglenavlist} className="block mx-12 mt-4  text-lg   font-semibold text-center  text-fadewhite py-2 px-4  hover:text-gold">Contact us</a>
                 
             </div>
         </div>

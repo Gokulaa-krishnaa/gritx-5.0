@@ -1,16 +1,16 @@
 import React from "react";
-import backbtn from "../images/backbtn.png";
-import mindtwisterslogo from "../images/mindtwisterslogo.png";
+import backbtn from "../assets/backbtn.png";
+import mindtwisterslogo from "../assets/mindtwisterslogo.png";
 
 function Description() {
   return (
     <div>
       <div>
         <div className="">
-          <div className="bg-contain bg-no-repeat bg-fixed bg-[url('images/webbg1.png')] bg-left-top bg-opacity-30 "></div>
+          <div className="bg-contain bg-no-repeat bg-fixed bg-[url('assets/webbg1.png')] bg-left-top bg-opacity-30 "></div>
 
           <div className="">
-            <div className="bg-contain bg-no-repeat bg-fixed bg-[url('images/webbg1.png')] bg-left-top bg-opacity-30 ">
+            <div className="bg-contain bg-no-repeat bg-fixed bg-[url('assets/webbg1.png')] bg-left-top bg-opacity-30 ">
               <div className=" flex justify-center sm:pt-12 lg:-ml-6">
                 <div className="  h-2/5 w-10/12 mt-6 sm:mt-10 md:w-9/12 bg-gradient-to-r from-[#000000]/70 to-transparent ">
                   <div className=" sm:flex sm:justify-end">
