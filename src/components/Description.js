@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useState } from "react";
 import backbtn from "../assets/backbtn.png";
 import mindtwisterslogo from "../assets/mindtwisterslogo.png";
+import  Mindtwisterdetails  from "../contents/mindtwisterdetails";
 
-function Description() {
+function Description(props) {
+
+  const [details,setdetails]=useState(Mindtwisterdetails);
+
   return (
     <div>
       <div>
@@ -26,7 +30,7 @@ function Description() {
 
                   <div className="h-auto w-1/6 pt-6 pl-6 -mt-20">
                     <h1 className="text-[#B760B1] font-bold  text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
-                      MIND
+                      {details.eventfirstname}
                     </h1>
                   </div>
                   <div className="h-auto w-1/5 pt-1 pl-6">

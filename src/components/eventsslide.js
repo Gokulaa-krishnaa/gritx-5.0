@@ -1,10 +1,6 @@
 import React, { Component } from 'react';
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
-import instalogo from '../assets/instalogo.png';
-import twitterlogo from '../assets/twitterlogo.png';
-import linkedinlogo from '../assets/linkedinlogo.png';
+import "react-responsive-carousel/lib/styles/carousel.min.css"; 
 import Containers from "./eventscarousel";
-const images = [instalogo, twitterlogo, linkedinlogo,linkedinlogo];
 
 
 const EventsSlide = () => {

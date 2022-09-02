@@ -1,33 +1,32 @@
-import campusambassadorlogo from '../assets/campusambassadorlogo.png'
+import alleventlogocollab from '../assets/alleventlogocollab.png'
+import gritxlogo from '../assets/gritxtitlelogo.png'
 
 const Home = () => {
     return ( 
-        <div className="h-screen float-right w-full lg:w-11/12  bg-grey bg-blurbwclgimg bg-cover bg-no-repeat" id="homesection">
+        <div className="min-h-screen float-right w-full lg:w-11/12  bg-grey bg-blurbwclgimg bg-cover bg-no-repeat" id="homesection">
+            
             <div >
-            <section className="pt-5 w-full h-full my-10 lg:pl-12 xl:pl-14 float-right">
-            <div className=" w-10/12 h-full m-auto ">
-          
-            <h1 className="text-3xl md:text-4xl text-purple border-l-4  font-semibold border-l-gold pl-2"> CAMPUS<br />AMBASSADOR</h1>
-            </div>
+                
+            <section className="pt-2 w-full h-full my-10 lg:pl-12 xl:pl-14 float-right">
+            
             <div >
-                <div className="card bg-primaryblack/50 h-full w-10/12 grid md:grid-cols-2 justify-center items-center m-auto my-5  rounded-xl p-10">
-                    <div classname="logoBox flex justify-center items-center w-full h-full ">
-                        <img src={campusambassadorlogo} className=" w-3/5 md:w-4/5  h-4/5 m-auto p-4" alt="campusambassadorlogo" />
-                    </div>
+            
+                <div className="card bg-primaryblack/50 h-full w-10/12 flex justify-center items-center m-auto my-5  rounded-xl p-10">
+                   
                     <div >
-                        <div className="content text-fadewhite font-light p-3 flex justify-center items-center	">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur iaculis facilisis nisl, sed tincidunt massa posuere vel. Vivamus semper lectus et justo scelerisque mollis. Integer tempor neque venenatis, maximus nibh id, suscipit
-                                metus. Suspendisse condimentum blandit auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi vitae sodales nisi. In porttitor diam arcu, eu mattis ipsum dignissim a. In velit
-                                quam, mattis in tempus ac, sollicitudin non ex.</p>
+                        <div className=" w-full h-full md:m-3 ">
+                           
+                            <img src={gritxlogo} alt=""  className="border-l-4  font-semibold border-l-gold pl-5 md:pl-8 "></img>   
+                            <img src={alleventlogocollab} alt="eventlogos" className='m-auto rotate w-full mt-5 md:w-80 md:float-right'/>
                         </div>
-                        <div className="button flex flex-col justify-center items-center my-7 md:my-15">
-                            
-                            <button className=" w-4/5 sm:w-2/5 hover:scale-125 text-xs sm:text-md px-5 py-2 m-2 text-tertiaryblack rounded-lg bg-gradient-to-r from-purple via-grad2 to-yellow drop-shadow-2xl"><a href="https://htmlcss3tutorials.com/owl-carousel-slider-bootstrap-5-example/">KNOW MORE</a></button>
-                            
-                            
-                            <button className="w-4/5 sm:w-2/5  text-xs sm:text-md flex justify-center px-5 py-2 m-2 border-palegreen rounded-lg text-palegreen hover:text-primaryblack hover:bg-palegreen border-2 ">REGISTER</button>
-                            
+                        <div className=" text-fadewhite font-light p-3 ">
+                        
+                        <p className=' text-center text-xl'>Sairam NSS is presenting GRITx on the occasion of NSS Day. GRITx is a grand event that is composed of spectacular contests viz Mind Twisters -To melt your brain, The warrior's league - To check your sports addiction and many more! Don't hold back yourself, let out the challenger in you. 
+The mode of events will be partly online/offline.</p>
+                        
+                           
                         </div>
+                        
                     </div>
                 </div>
             </div>
