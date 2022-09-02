@@ -6,7 +6,7 @@ function Description() {
   return (
     <div>
       <div>
-        <div className="">
+        <div className="hidden sm:block">
           <div className="bg-contain bg-no-repeat bg-fixed bg-[url('assets/webbg1.png')] bg-left-top bg-opacity-30 "></div>
 
           <div className="">
@@ -24,7 +24,7 @@ function Description() {
                     </div>
                   </div>
 
-                  <div className="h-auto w-1/6 pt-6 pl-6 -mt-20 ">
+                  <div className="h-auto w-1/6 pt-6 pl-6 -mt-20">
                     <h1 className="text-[#B760B1] font-bold  text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-5xl">
                       MIND
                     </h1>
@@ -43,8 +43,8 @@ function Description() {
                     <img
                       className="text-white"
                       src={mindtwisterslogo}
-                      alt="mind twisters logo"
-                    ></img>
+                      alt="mind twisters logo">
+                    </img>
                   </div>
                 </div>
               </div>
@@ -152,6 +152,92 @@ function Description() {
               </div>
             </div>
           </div>
+        </div>
+        <div className="block sm:hidden">
+          <div className="bg-gradient-to-r from-[#000000]/70 to-transparent pb-12">
+            <div className="pl-8 pt-8">
+              <a href=""><img className="h-10 w-10" src={backbtn}></img></a>
+            </div>
+            <div className="flex flex-row w-full items-center pt-4 pb-8 bg-[url('assets/webbg1.png') bg-contain bg-no-repeat">
+              <div className="w-1/2 pl-12">
+                  <div className="h-auto w-1/6 pl-6 text-2xl">
+                    <h1 className="text-[#B760B1] font-bold">
+                      MIND
+                    </h1>
+                  </div>
+                  <div className="h-auto w-1/5 pt-1 pl-6 text-2xl">
+                    <h1 className="text-white font-bold">
+                      TWISTERS
+                    </h1>
+                  </div>
+                  <div className="h-auto sm:w-2/5 pt-2 pl-7 text-md">
+                    <h1 className="text-[#E6BB5B] font-bold">
+                      Sept 24, 2022
+                    </h1>
+                  </div>
+              </div>
+              <div className="w-1/2 flex justify-center">
+                <img
+                  className="text-white h-40 w-40"
+                  src={mindtwisterslogo}
+                  alt="mind twisters logo">
+                </img>
+              </div>
+            </div>
+            <div className=" sm:flex sm:justify-end">
+                <div className="flex flex-col items-center">
+                  <button className="w-40 h-10 m-4 border-none font-normal rounded-lg bg-gradient-to-r from-[#B760B1] via-[#E36595] to-[#E6BB5B] text-white">
+                    GET BROCHURE
+                  </button>
+                  <button className="w-40 py-2 font-semibold border-[#229D98] border-2 text-[#229D98]">
+                    REGISTER
+                  </button>
+                </div>
+            </div>
+        </div>
+        <div className="bg-gradient-to-r from-black/70 to-transparent">
+          <div className="flex flex-col justify-center bg-gradient-to-r from-black/70 to-transparent">
+            <div className="ml-8 border-b-2 border-b-[#E6BB5B] font-bold py-2 w-1/2">
+              <h1 className="text-[#229D98] text-2xl">About <span className="text-white">Event</span></h1>
+            </div>
+              <div className="py-4 px-20">
+                <p className="text-white text-justify">
+                    Mind Twisters is an exciting event to make your brain go
+                    stark crazy! The event has 3 rounds to bring out the
+                    tycoon in you with a bit of jest. Participate with your
+                    pals to have fun while sharing your humorous ideas and
+                    an excellent knack for persuading the consumers, but
+                    with a funny way of expressing your plans.
+                </p>
+              </div>
+          </div>
+          <div className="pb-8">
+            <div>
+              <h1 className="text-[#B760B1] text-center font-bold text-2xl py-2">
+                03
+              </h1>
+              <h1 className="text-[#229D98] text-center font-bold text-2xl py-2">
+                ROUNDS
+              </h1>
+            </div>
+            <div>
+              <h1 className="text-[#B760B1] text-center font-bold text-2xl py-2">
+                02
+              </h1>
+              <h1 className="text-[#229D98] text-center font-bold text-2xl py-2">
+                WINNERS
+              </h1>
+            </div>
+            <div>
+              <h1 className="text-[#B760B1] text-center font-bold text-2xl py-2">
+                50+
+              </h1>
+              <h1 className="text-[#229D98] text-center font-bold text-2xl py-2">
+                REGISTRATIONS
+              </h1>
+            </div>
+          </div>
+        </div>
         </div>
       </div>
     </div>

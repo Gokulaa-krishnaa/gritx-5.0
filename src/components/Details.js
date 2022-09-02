@@ -37,7 +37,7 @@ function Details() {
 
   return (
     <div>
-        <div className="flex justify-center mt-14 p-10">
+        <div className="flex justify-center p-10">
         <div className=" w-11/12 sm:w-3/4 h-auto p-10 bg-black ">
 
             
@@ -59,7 +59,7 @@ function Details() {
 
             </div>
 
-            <div className="flex items-center justify-center">
+            <div className="flex items-center justify-center">  
             <div className="flex my-4 sm:my-10 w-11/12 border-10 bg-[#191919] drop-shadow-lg ">
 
             <div className="sm:m-7 p-4" id="round1" >
