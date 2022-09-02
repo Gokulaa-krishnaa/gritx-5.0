@@ -35,6 +35,7 @@ module.exports = {
         'instalogo': "url('./assets/instalogo.png')",
         'twitterlogo': "url('./assets/twitterlogo.png')",
         'linkedinlogo': "url('./assets/linkedinlogo.png')",
+        'collegegraph':"url(./assets/collegegraph.png)",
       }
     },
   },
