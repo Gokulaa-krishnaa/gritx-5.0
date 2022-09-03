@@ -5,7 +5,6 @@ import './index.css';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import Home from './components/home';
-import EventsSlide from './components/eventsslide';
 import Campusambassador from './components/campusambassador';
 import Busroute from './components/busroute';
 import Description from './components/Description';
@@ -33,7 +32,7 @@ root.render(
         <>
         <Navbar />
         <Home />
-        <EventsSlide />
+        {/* <EventsSlide /> */}
         <Campusambassador />
         <Busroute />
         <Footer />
