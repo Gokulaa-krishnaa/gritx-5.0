@@ -5,6 +5,7 @@ import './index.css';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
 import Home from './components/home';
+import EventsSlide from './components/eventsslide';
 import Campusambassador from './components/campusambassador';
 import Busroute from './components/busroute';
 import Description from './components/Description';
@@ -22,6 +23,7 @@ import pixmelogo from "./assets/pixmelogo.png";
 import thewarriorsleaguelogo from "./assets/warriorsleaguelogo.png";
 import squidgamelogo from "./assets/squidgamelogo.png";
 import hyperzestbrochure from "./assets/hyperzestbrochure.pdf"
+import Squidgame from './components/Squidgame';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -32,7 +34,8 @@ root.render(
         <>
         <Navbar />
         <Home />
-        {/* <EventsSlide /> */}
+        <EventsSlide />
+        <Squidgame />
         <Campusambassador />
         <Busroute />
         <Footer />
