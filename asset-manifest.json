@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gritx-5.0/static/css/main.648b3af4.css",
-    "main.js": "/gritx-5.0/static/js/main.de8d6d61.js",
+    "main.js": "/gritx-5.0/static/js/main.b14f6a59.js",
     "static/media/hyperzestbrochure.pdf": "/gritx-5.0/static/media/hyperzestbrochure.1f274e2deecc3a87571a.pdf",
     "static/media/mindtwisterbg.png": "/gritx-5.0/static/media/mindtwisterbg.d15fcc2ee8f38a3da3c3.png",
     "static/media/warriorsleaguelogo.png": "/gritx-5.0/static/media/warriorsleaguelogo.228a4b34953bcc83cdb6.png",
@@ -28,10 +28,10 @@
     "static/media/slick.woff": "/gritx-5.0/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/gritx-5.0/index.html",
     "main.648b3af4.css.map": "/gritx-5.0/static/css/main.648b3af4.css.map",
-    "main.de8d6d61.js.map": "/gritx-5.0/static/js/main.de8d6d61.js.map"
+    "main.b14f6a59.js.map": "/gritx-5.0/static/js/main.b14f6a59.js.map"
   },
   "entrypoints": [
     "static/css/main.648b3af4.css",
-    "static/js/main.de8d6d61.js"
+    "static/js/main.b14f6a59.js"
   ]
 }
