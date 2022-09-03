@@ -37,6 +37,7 @@ module.exports = {
         'twitterlogo': "url('./assets/twitterlogo.png')",
         'linkedinlogo': "url('./assets/linkedinlogo.png')",
         "mindtwisterbg":"url('./assets/mindtwisterbg.png')",
+        "hyperzestbg":"url('./assets/mindtwisterbg.png')",
       }
     },
   },
