@@ -4,7 +4,6 @@ import Slider from "react-slick";
 import mindtwisterslogo from '../assets/mindtwisterslogo.png';
 import dazeplaylogo from '../assets/dazeplaylogo.png'
 import hyperzestlogo from '../assets/hyperzestlogo.png'
-import squidgamelogo from '../assets/squidgamelogo.png'
 import funnyweaverlogo from '../assets/funnyweaverlogo.png'
 import pixmelogo from '../assets/pixmelogo.png'
 import warriorsleaguelogo from '../assets/warriorsleaguelogo.png'
@@ -57,16 +56,15 @@ const Containers=()=>{
             {index:2,eventtitle:"Hyper-Zest",eventlogo:hyperzestlogo,eventdescription:"How exhausted are you by the interview process? It's time to leave it aside and let's have a witty and funny interview and make you feel better. Join us!",knowmorelink:"",registerlink:"",navlink:"/hyperzest"},
             {index:3,eventtitle:"Daze-Play",eventlogo:dazeplaylogo,eventdescription:"Hey Buddies, it’s time to unwind yourselves. Participating in this entertaining event will indeed be fun and interesting. Don’t miss it ever!",knowmorelink:"",registerlink:"",navlink:"/dazeplay"},
             {index:4,eventtitle:"Pixme",eventlogo:pixmelogo,eventdescription:"Mind Twisters is an exciting event to make your brain go stark crazy! This event has 3 rounds to bring out the tycoon in you with a bit of jest. ",knowmorelink:"",registerlink:"",navlink:"/pixme"},
-            {index:5,eventtitle:"Squid-Game",eventlogo:squidgamelogo,eventdescription:"Mind Twisters is an exciting event to make your brain go stark crazy! This event has 3 rounds to bring out the tycoon in you with a bit of jest. ",knowmorelink:"",registerlink:"",navlink:"/squidgame"},
-            {index:6,eventtitle:"Funny Weaver",eventlogo:funnyweaverlogo,eventdescription:"Mind Twisters is an exciting event to make your brain go stark crazy! This event has 3 rounds to bring out the tycoon in you with a bit of jest. ",knowmorelink:"",registerlink:"",navlink:"/funnyweaver"},
-            {index:7,eventtitle:"The Warriors League",eventlogo:warriorsleaguelogo,eventdescription:" Sports lover? Do join us. Engage your spirit and show your attitude in the field, Kick the barrier towards the goal",knowmorelink:"",registerlink:"",navlink:"/thewarriorsleague"},
+            {index:5,eventtitle:"Funny Weaver",eventlogo:funnyweaverlogo,eventdescription:"Mind Twisters is an exciting event to make your brain go stark crazy! This event has 3 rounds to bring out the tycoon in you with a bit of jest. ",knowmorelink:"",registerlink:"",navlink:"/funnyweaver"},
+            {index:6,eventtitle:"The Warriors League",eventlogo:warriorsleaguelogo,eventdescription:" Sports lover? Do join us. Engage your spirit and show your attitude in the field, Kick the barrier towards the goal",knowmorelink:"",registerlink:"",navlink:"/thewarriorsleague"},
         ]
     );
 
     return(
       
             <div className="w-12/12 h-full mt-5 m-auto ">
-                <Slider {...settings} className="w-full w-full h-full ">
+                <Slider {...settings} className="w-full h-full ">
                 { eventsdetails.map((event) => (
                     <div>
                     <div index={event.index} className="slider-card w-full h-full    ">
