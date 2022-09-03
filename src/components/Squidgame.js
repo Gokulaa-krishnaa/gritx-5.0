@@ -22,7 +22,7 @@ const Squidgame = () => {
                             <Link to="/squidgame" className='w-4/5 sm:w-2/5 m-2 '><button className="w-full hover:scale-125 text-xs sm:text-md px-5 py-2 text-tertiaryblack rounded-lg bg-gradient-to-r from-purple via-grad2 to-yellow drop-shadow-2xl">KNOW MORE</button> </Link>
                             
                             
-                            <a href="https://forms.gle/EMwuzhZNfw3QVzqo8" target="_blank" className="w-4/5 sm:w-2/5  text-xs sm:text-md flex justify-center px-5 py-2 m-2 border-palegreen rounded-lg text-palegreen hover:text-primaryblack hover:bg-palegreen border-2 "><button>REGISTER</button></a>
+                            <a href="https://www.geeksforgeeks.org/" target="_blank" className="w-4/5 sm:w-2/5  text-xs sm:text-md flex justify-center px-5 py-2 m-2 border-palegreen rounded-lg text-palegreen hover:text-primaryblack hover:bg-palegreen border-2 "><button>REGISTER</button></a>
                             
                         </div>
                     </div>
