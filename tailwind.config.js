@@ -24,6 +24,7 @@ module.exports = {
         'yellow':'#E6BA5B',
         'palegreen':'#359E99',
         'green':'#1B605D',
+        'brightgreen':"#229D98",
         'fadewhite':'#D0D5CF',
         'grad1': '#E36595',
         'grad2': '#F87977',
@@ -35,7 +36,7 @@ module.exports = {
         'instalogo': "url('./assets/instalogo.png')",
         'twitterlogo': "url('./assets/twitterlogo.png')",
         'linkedinlogo': "url('./assets/linkedinlogo.png')",
-        'collegegraph':"url(./assets/collegegraph.png)",
+        "mindtwisterbg":"url('./assets/mindtwisterbg.png')",
       }
     },
   },
