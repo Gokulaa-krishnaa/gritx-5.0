@@ -1,5 +1,3 @@
-
-
 const Mindtwisterdetails= () =>{
     
     
@@ -25,9 +23,9 @@ const Mindtwisterdetails= () =>{
 
 const Mindtwistersroundsdetails=()=>{
     const roundsdetails=[
-        {id:"1",btnid:"roundbtn1",onClickfunction:"roundbtnx",roundtitle:"Mind Games",rounddescription:"The participants will be provided with topics, from which they have to choose one and make a plan to sell the product, humorously that is feasible in the real world."},
-        {id:"2",btnid:"roundbtn2",onClickfunction:"roundbtny",roundtitle:"Dragon's Den",rounddescription:"The selected participants will go through the second round where they have to go under interrogation with comical questions which they have to answer cleverly."},
-        {id:"3",btnid:"roundbtn3",onClickfunction:"roundbtnz",roundtitle:"Survival on deck",rounddescription:"The finalists will travel on a ship where their life is at stake. Their only chance of survival is in the hands of the ship captain. Use your wits to captivate the captain’s mind."}
+        {id:"1",btnid:"roundbtn1",onClickfunction:"roundbtnx",roundtitle:"Mind Games",rounddescription:"The participants will be provided with topics, from which they have to choose one and make a plan to sell the product, humorously that is feasible in the real world.",date:17,month:"Sep",year:2022},
+        {id:"2",btnid:"roundbtn2",onClickfunction:"roundbtny",roundtitle:"Dragon's Den",rounddescription:"The selected participants will go through the second round where they have to go under interrogation with comical questions which they have to answer cleverly.",date:18,month:"Sep",year:2022},
+        {id:"3",btnid:"roundbtn3",onClickfunction:"roundbtnz",roundtitle:"Survival on deck",rounddescription:"The finalists will travel on a ship where their life is at stake. Their only chance of survival is in the hands of the ship captain. Use your wits to captivate the captain’s mind.",date:24,month:"Sep",year:2022},
     ]
     return roundsdetails;
 }

@@ -22,9 +22,12 @@ function Description(detailss) {
                 <div className="  h-2/5 w-10/12 mt-6 sm:mt-10 md:w-9/12 bg-gradient-to-r from-[#000000]/70 to-transparent ">
                   <div className=" sm:flex sm:justify-end">
                     <div className="sm:grid sm:grid-cols-2 sm:gap-14 ">
-                      <button className=" border-none font-normal sm:text-sm md:text-base lg:text-lg xl:text-xl sm:mt-10 md:px-1 md:py-1 lg:px-8 lg:py-1 rounded-lg bg-gradient-to-r from-purple via-[#E36595] to-[#E6BB5B] text-white hover:scale-125">
-                        GET BROCHURE
-                      </button>
+                      <a href={detailss.brochure} className="w-full h-full" download>
+                      <button className="w-full h-12 border-none font-normal sm:text-sm md:text-base lg:text-lg xl:text-xl sm:mt-10 md:px-1 md:py-1 lg:px-8 lg:py-1 rounded-lg bg-gradient-to-r from-purple via-[#E36595] to-[#E6BB5B] text-white hover:scale-125">
+                         GET BROCHURE
+                      </button>  
+                      </a>                     
+                      
                       <button className=" font-semibold hover:bg-brightgreen hover:text-primaryblack md:text-base lg:text-lg xl:text-xl px-4 py-2 sm:mt-10 border-brightgreen border-4 text-brightgreen">
                         REGISTER
                       </button>
@@ -46,7 +49,7 @@ function Description(detailss) {
                     {details.month} {details.date}, {details.year}
                     </h1>
                   </div>
-                  <div className="h-24 w-24 ml-4 md:h-32 md:w-32 lg:h-40 lg:w-40 xl:h-52 xl:w-52 lg:-mt-2">
+                  <div className="h-24 w-24 ml-4  md:h-32 md:w-32 lg:h-40 lg:w-40 xl:h-52 xl:w-52 ">
                     <img
                       className="text-white"
                       src={detailss.eventlogo}
@@ -59,7 +62,7 @@ function Description(detailss) {
               <div className="grid grid-cols-2 sm:mr-24 sm:-mt-20 md:-mt-40 lg:-mt-36 xl:-mt-52">
                 <div className="flex flex-col justify-center md:mr-8 lg:mr-10">
                   <div className="flex justify-center items-center sm:mt-14 md:mt-32 lg:mt-24 xl:mt-36 ">
-                  <Link to="/"><img
+                  <Link to="/#eventssection"><img
                       src={backbtn}
                       alt="back btn "
                       className=" sm:h-7 sm:w-7 md:h-8 md:w-8 lg:h-12 lg:w-12 xl:h-16 xl:w-16"

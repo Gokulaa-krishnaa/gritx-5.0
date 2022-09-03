@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import './index.css';
 import Navbar from './components/navbar';
 import Footer from './components/footer';
@@ -12,6 +12,8 @@ import Description from './components/Description';
 import Details from './components/Details';
 import Descriptionfooter from './components/Descriptionfooter';
 import  Mindtwisterdetails  from "./contents/mindtwisterdetails";
+import Hyperzestdetails from "./contents/hyperzest";
+import Dazeplaydetails from "./contents/dazeplay";
 import mindtwisterslogo from "./assets/mindtwisterslogo.png";
 import hyperzestlogo from "./assets/hyperzestlogo.png";
 import funnyweaverlogo from "./assets/funnyweaverlogo.png";
@@ -20,11 +22,12 @@ import campusambassadorlogo from "./assets/campusambassadorlogo.png";
 import pixmelogo from "./assets/pixmelogo.png";
 import thewarriorsleaguelogo from "./assets/warriorsleaguelogo.png";
 import squidgamelogo from "./assets/squidgamelogo.png";
+import hyperzestbrochure from "./assets/hyperzestbrochure.pdf"
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
+    <HashRouter>
     <Routes >
       <Route path="/" element={
         <>
@@ -42,7 +45,7 @@ root.render(
     <Routes >
       <Route path="/mindtwisters" element={
         <>
-          <Description Descriptioncontent={Mindtwisterdetails.Mindtwisterdetails} eventlogo={mindtwisterslogo}/>
+          <Description Descriptioncontent={Mindtwisterdetails.Mindtwisterdetails} eventlogo={mindtwisterslogo} />
           <Details Descriptioncontent={Mindtwisterdetails.Mindtwistersroundsdetails}  />
           <Descriptionfooter Descriptioncontent={Mindtwisterdetails.Mindtwisterscontactdetails} />
         </>
@@ -50,16 +53,16 @@ root.render(
 
     <Route path="/hyperzest" element={
         <>
-          <Description Descriptioncontent={Mindtwisterdetails.Mindtwisterdetails} eventlogo={hyperzestlogo}/>
-          <Details Descriptioncontent={Mindtwisterdetails.Mindtwistersroundsdetails}  />
-          <Descriptionfooter Descriptioncontent={Mindtwisterdetails.Mindtwisterscontactdetails} />
+          <Description Descriptioncontent={Hyperzestdetails.Hyperzestdetails} eventlogo={hyperzestlogo} brochure={hyperzestbrochure}/>
+          <Details Descriptioncontent={Hyperzestdetails.Hyperzestsroundsdetails}  />
+          <Descriptionfooter Descriptioncontent={Hyperzestdetails.Hyperzestcontactdetails} />
         </>
       } />
       <Route path="/dazeplay" element={
         <>
-          <Description Descriptioncontent={Mindtwisterdetails.Mindtwisterdetails} eventlogo={dazeplaylogo}/>
-          <Details Descriptioncontent={Mindtwisterdetails.Mindtwistersroundsdetails}  />
-          <Descriptionfooter Descriptioncontent={Mindtwisterdetails.Mindtwisterscontactdetails}/>
+          <Description Descriptioncontent={Dazeplaydetails.Dazeplaydetails} eventlogo={dazeplaylogo}/>
+          <Details Descriptioncontent={Dazeplaydetails.Dazeplaysroundsdetails}  />
+          <Descriptionfooter Descriptioncontent={Dazeplaydetails.Dazeplaycontactdetails}/>
         </>
       } />
       <Route path="/pixme" element={
@@ -101,7 +104,7 @@ root.render(
 
     </Routes>
     
-    </BrowserRouter>
+    </HashRouter>
    
   </React.StrictMode>
 );
