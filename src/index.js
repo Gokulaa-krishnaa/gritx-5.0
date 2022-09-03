@@ -11,8 +11,15 @@ import Busroute from './components/busroute';
 import Description from './components/Description';
 import Details from './components/Details';
 import Descriptionfooter from './components/Descriptionfooter';
-import Mindtwisterdetails from './contents/mindtwisterdetails';
-
+import  Mindtwisterdetails  from "./contents/mindtwisterdetails";
+import mindtwisterslogo from "./assets/mindtwisterslogo.png";
+import hyperzestlogo from "./assets/hyperzestlogo.png";
+import funnyweaverlogo from "./assets/funnyweaverlogo.png";
+import dazeplaylogo from "./assets/dazeplaylogo.png";
+import campusambassadorlogo from "./assets/campusambassadorlogo.png";
+import pixmelogo from "./assets/pixmelogo.png";
+import thewarriorsleaguelogo from "./assets/warriorsleaguelogo.png";
+import squidgamelogo from "./assets/squidgamelogo.png";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -29,18 +36,71 @@ root.render(
         <Footer />
         </>
       } />
+      
 
     </Routes>
     <Routes >
-      <Route path="/events" element={
+      <Route path="/mindtwisters" element={
         <>
-          <Description Descriptioncontent={Mindtwisterdetails}/>
-          <Details />
-          <Descriptionfooter />
+          <Description Descriptioncontent={Mindtwisterdetails.Mindtwisterdetails} eventlogo={mindtwisterslogo}/>
+          <Details Descriptioncontent={Mindtwisterdetails.Mindtwistersroundsdetails}  />
+          <Descriptionfooter Descriptioncontent={Mindtwisterdetails.Mindtwisterscontactdetails} />
         </>
       } />
 
+    <Route path="/hyperzest" element={
+        <>
+          <Description Descriptioncontent={Mindtwisterdetails.Mindtwisterdetails} eventlogo={hyperzestlogo}/>
+          <Details Descriptioncontent={Mindtwisterdetails.Mindtwistersroundsdetails}  />
+          <Descriptionfooter Descriptioncontent={Mindtwisterdetails.Mindtwisterscontactdetails} />
+        </>
+      } />
+      <Route path="/dazeplay" element={
+        <>
+          <Description Descriptioncontent={Mindtwisterdetails.Mindtwisterdetails} eventlogo={dazeplaylogo}/>
+          <Details Descriptioncontent={Mindtwisterdetails.Mindtwistersroundsdetails}  />
+          <Descriptionfooter Descriptioncontent={Mindtwisterdetails.Mindtwisterscontactdetails}/>
+        </>
+      } />
+      <Route path="/pixme" element={
+        <>
+          <Description Descriptioncontent={Mindtwisterdetails.Mindtwisterdetails} eventlogo={pixmelogo}/>
+          <Details Descriptioncontent={Mindtwisterdetails.Mindtwistersroundsdetails}  />
+          <Descriptionfooter Descriptioncontent={Mindtwisterdetails.Mindtwisterscontactdetails} />
+        </>
+      } />
+      <Route path="/squidgame" element={
+        <>
+          <Description Descriptioncontent={Mindtwisterdetails.Mindtwisterdetails} eventlogo={squidgamelogo}/>
+          <Details Descriptioncontent={Mindtwisterdetails.Mindtwistersroundsdetails}  />
+          <Descriptionfooter Descriptioncontent={Mindtwisterdetails.Mindtwisterscontactdetails} />
+        </>
+      } />
+      <Route path="/funnyweaver" element={
+        <>
+          <Description Descriptioncontent={Mindtwisterdetails.Mindtwisterdetails} eventlogo={funnyweaverlogo}/>
+          <Details Descriptioncontent={Mindtwisterdetails.Mindtwistersroundsdetails}  />
+          <Descriptionfooter Descriptioncontent={Mindtwisterdetails.Mindtwisterscontactdetails} />
+        </>
+      } />
+      <Route path="/thewarriorsleague" element={
+        <>
+          <Description Descriptioncontent={Mindtwisterdetails.Mindtwisterdetails} eventlogo={thewarriorsleaguelogo}/>
+          <Details Descriptioncontent={Mindtwisterdetails.Mindtwistersroundsdetails}  />
+          <Descriptionfooter Descriptioncontent={Mindtwisterdetails.Mindtwisterscontactdetails}/>
+        </>
+      } />
+      <Route path="/campusambassador" element={
+        <>
+          <Description Descriptioncontent={Mindtwisterdetails.Mindtwisterdetails} eventlogo={campusambassadorlogo}/>
+          <Details Descriptioncontent={Mindtwisterdetails.Mindtwistersroundsdetails}  />
+          <Descriptionfooter Descriptioncontent={Mindtwisterdetails.Mindtwisterscontactdetails}/>
+        </>
+      } />
+
+
     </Routes>
+    
     </BrowserRouter>
    
   </React.StrictMode>

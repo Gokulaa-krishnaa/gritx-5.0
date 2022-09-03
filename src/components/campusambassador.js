@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import campusambassadorlogo from '../assets/campusambassadorlogo.png'
 import collegegraph from '../assets/collegegraph.png'
 
@@ -22,7 +23,7 @@ const Campusambassador = () => {
                         </div>
                         <div className="button flex flex-col justify-center items-center my-7 md:my-15">
                             
-                            <button className=" w-4/5 sm:w-2/5 hover:scale-125 text-xs sm:text-md px-5 py-2 m-2 text-tertiaryblack rounded-lg bg-gradient-to-r from-purple via-grad2 to-yellow drop-shadow-2xl">KNOW MORE</button>
+                            <Link to="/campusambassador" className='w-4/5 sm:w-2/5 m-2 '><button className="w-full hover:scale-125 text-xs sm:text-md px-5 py-2 text-tertiaryblack rounded-lg bg-gradient-to-r from-purple via-grad2 to-yellow drop-shadow-2xl">KNOW MORE</button> </Link>
                             
                             
                             <button className="w-4/5 sm:w-2/5  text-xs sm:text-md flex justify-center px-5 py-2 m-2 border-palegreen rounded-lg text-palegreen hover:text-primaryblack hover:bg-palegreen border-2 ">REGISTER</button>
@@ -31,7 +32,7 @@ const Campusambassador = () => {
                     </div>
                 </div>
             </div>
-            <img src={collegegraph} alt="clggrp" className='w-full px-10 sm:px-28 md:px-52'></img>
+            <img src={collegegraph} alt="clggrp" className='w-full px-10 sm:px-28 md:px-72'></img>
             </section>
             
         </div>

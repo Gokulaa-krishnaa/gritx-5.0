@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import purple from "../assets/hexpurple.png";
 import yellow from "../assets/hexyellow.png";
 import nsslogo from "../assets/nsslogo.png";
@@ -7,7 +7,11 @@ import instalogo from '../assets/instalogo.png';
 import twitterlogo from '../assets/twitterlogo.png';
 import linkedinlogo from '../assets/linkedinlogo.png';
 
-function Descriptionfooter() {
+function Descriptionfooter(detailss) {
+
+  const [details,setdetails]=useState(detailss.Descriptioncontent);
+
+
   return (
     
     <div className="bg-[#212121] float-right w-full h-full" id="footersection">
@@ -21,7 +25,7 @@ function Descriptionfooter() {
               <img className="w-60 h-40 sm:w-72 md:w-full md:h-48 lg:h-72" src={yellow} alt="footer"></img>
                 <div className="absolute text-white text-center text-[12px] lg:text-[16px]">
                   <h1 className="font-bold font-michroma text-[#B760B1] text-[14px] lg:text-[22px]">EMAIL</h1>
-                  <p className="lg:leading-10">nsssairam@sairam.edu.in</p>
+                  <p className="lg:leading-10">{details.contactemail}</p>
                   <p className="">Send your queries <br/> with the subject - <br/>"Help Desk - Your subject"</p>
                 </div>
             </div>
@@ -30,12 +34,11 @@ function Descriptionfooter() {
             <div className="w-full h-full flex justify-center items-center md:p-10 lg:p-2">
                 <img className="w-80 h-60 sm:h-60 sm:w-96 md:h-72 lg:w-full lg:h-96" src={purple} alt="footer"></img>
                 <div className="absolute text-white text-center text-[12px] lg:text-[16px]">
-                  <h1 className="lg:leading-10 font-bold font-michroma text-[#E6BA5B] text-[16px] lg:text-[22px]">CONTACT</h1>
-                  <p className="lg:leading-10">Dr.G.Sathish Kumar : +91 91766 14721</p>
-                  <p className="lg:leading-10">Dr.Uma Maheswaran : +91 98407 22474</p>
-                  <p className="lg:leading-10">S Shanmuganathan : +91 6382388264</p>
-                  <p className="lg:leading-10">Srivarshan G : +91 9842810900</p>
-                  <p className="lg:leading-10">Jayasurya V : 9940438387</p>
+                  <h1 className="lg:leading-10 font-bold font-michroma text-[#E6BA5B] text-[16px] lg:text-[22px]">CO-ORDINATORS</h1>
+                  {details.coordinators.map((e)=>(
+                    <p className="text-xl lg:leading-10">{e}</p>
+                  ))}
+                  
                 </div>
             </div>
           </div> 
@@ -43,9 +46,9 @@ function Descriptionfooter() {
             <div className="w-full flex justify-center items-center h-full p-5">
               <img className="w-60 h-40 sm:w-72 md:w-full md:h-48 lg:h-72" src={yellow} alt="footer"></img>
               <div className="absolute text-white text-center">
-                  <h1 className="sm:leading-10 font-bold font-michroma text-[#B760B1] text-[14px] lg:text-[22px]">ADDRESS</h1>
-                  <p className="font-bold text-[12px] lg:text-[14px]">SRI SAIRAM <br/> ENGINEERING COLLEGE</p>
-                  <p className='text-[10px] lg:text-[14px]'>Sai Leo Nagar, <br className='hidden sm:block'/> West Tambaram,<br/>Chennai - 600044<br/>Tamil Nadu<br/>India</p>
+                  <h1 className="sm:leading-10 font-bold font-michroma text-[#B760B1] text-[14px] lg:text-[22px]">FOR HELP</h1>
+                  <p className=" text-lg ">{details.contactperson1}<br /><b className='text-sm lg:text-md'>{details.contact1}</b></p>
+                  <p className=" text-lg ">{details.contactperson2}<br /><b className='text-sm lg:text-md'>{details.contact2}</b></p>
                 </div>
             </div>
           </div>

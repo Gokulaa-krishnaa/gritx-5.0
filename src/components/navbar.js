@@ -49,7 +49,7 @@ const Navbar = () => {
                         </div>
                     </div>
                 </nav>
-            <div className="w-full h-22 p-2 grid grid-cols-12 items-center bg-tertiaryblack justify-center lg:hidden z-10" id="hamburger-btn" ref={mobilenavbar}>
+            <div className="fixed w-full h-22 p-2 grid grid-cols-12 items-center bg-tertiaryblack justify-center lg:hidden z-10" id="hamburger-btn" ref={mobilenavbar}>
                 <div className="mob-logo  ml-4  col-span-2 w-full flex justify-center items-center">
                     <div className="logo w-full ">
                         
