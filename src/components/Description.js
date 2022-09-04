@@ -208,7 +208,7 @@ function Description(detailss) {
               </div>
               <div className="w-1/2 flex justify-center">
                 <img
-                  className="text-white h-40 w-40"
+                  className="text-white h-40 w-40 "
                   src={detailss.eventlogo}
                   alt="mind twisters logo">
                 </img>
@@ -220,7 +220,7 @@ function Description(detailss) {
                   <button className="w-40 h-10 m-4 border-none font-normal rounded-lg bg-gradient-to-r from-purple via-[#E36595] to-[#E6BB5B] text-white">
                     GET BROCHURE
                   </button></a>
-                  <a href={details.registrationlink} target="_blank"><button className="w-40 py-2 font-semibold border-brightgreen hover:text-primaryblack border-2 text-brightgreen">
+                  <a href={details.registrationlink} target="_blank"><button className="w-40 py-2 font-semibold border-brightgreen hover:bg-brightgreen hover:text-primaryblack border-2 text-brightgreen">
                     REGISTER
                   </button></a>
                 </div>

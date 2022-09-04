@@ -13,9 +13,10 @@ const Squidgame = () => {
                 <div className="card bg-primaryblack/50 h-full w-10/12 grid md:grid-cols-2 justify-center items-center m-auto my-5  rounded-xl p-10">
                     <div >
                         <div className="content text-fadewhite font-light p-3 flex justify-center items-center	">
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur iaculis facilisis nisl, sed tincidunt massa posuere vel. Vivamus semper lectus et justo scelerisque mollis. Integer tempor neque venenatis, maximus nibh id, suscipit
-                                metus. Suspendisse condimentum blandit auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi vitae sodales nisi. In porttitor diam arcu, eu mattis ipsum dignissim a. In velit
-                                quam, mattis in tempus ac, sollicitudin non ex.</p>
+                            <p>A daring game that definitely makes you thrilled to bits! There are three levels of adventure that one needs to surpass with a strong will to grab the bull’s eye!
+                                Just have a hand in with your fellow mates to make a feat!
+                                Fling your abilities with a short rapid-fire .Get ready for some adrenaline rush through you!!
+                            </p>
                         </div>
                         <div className="button flex flex-col justify-center items-center my-7 md:my-15">
                             

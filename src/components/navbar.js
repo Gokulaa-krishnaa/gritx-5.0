@@ -42,9 +42,9 @@ const Navbar = () => {
                             </div>
                             <div className="connectus row-span-1 w-full flex justify-center items-center">
                                 <div className='grid grid-cols-3 p-5'>
-                                    <div className='w-4/5 h-5/5 scale-100 hover:scale-125 drop-shadow-3xl'><Link to="https://instagram.com/sairamnss?igshid=YmMyMTA2M2Y="><img  src={instalogo} className="w-full h-full" /></Link></div>
-                                    <div className='w-4/5 h-5/5 scale-100 hover:scale-125 drop-shadow-3xl'><Link to="https://www.Linkedin.com/company/nss-sairam/"><img  src={linkedinlogo} className="w-full h-full" /></Link></div>
-                                    <div className='w-4/5 h-5/5 scale-100 hover:scale-125 drop-shadow-3xl'><Link to="https://twitter.com/NSSSAIRAM?s=20&t=I-QlWVigzBdfoOMhxAbK0A"><img  src={twitterlogo} className="w-full h-full" /></Link></div>
+                                    <div className='w-4/5 h-5/5 scale-100 hover:scale-125 drop-shadow-3xl'><a href="https://instagram.com/sairamnss?igshid=YmMyMTA2M2Y=" target="_blank" ><img  src={instalogo} className="w-full h-full" /></a></div>
+                                    <div className='w-4/5 h-5/5 scale-100 hover:scale-125 drop-shadow-3xl'><a href="https://www.Linkedin.com/company/nss-sairam/"  target="_blank"><img  src={linkedinlogo} className="w-full h-full" /></a></div>
+                                    <div className='w-4/5 h-5/5 scale-100 hover:scale-125 drop-shadow-3xl'><a href="https://twitter.com/NSSSAIRAM?s=20&t=I-QlWVigzBdfoOMhxAbK0A"  target="_blank"><img  src={twitterlogo} className="w-full h-full" /></a></div>
                                 </div>
                                 
                             </div>

@@ -8,7 +8,7 @@ const Pixmedetails= () =>{
         date:17,
         month:"Sep",
         year:2022,
-        eventdescription:"Pixme is a photographic event that will be exciting and fun to attend. It's an excellent chance to showcase your photographic abilities.Simply uploading your work to us is all that is required. Participants must submit their photos using the attached Google form between September 3 and September 22. The photo's theme could be related to food or have a nighttime or dark tone.",
+        eventdescription:"Pixme is a photographic event that will be exciting and fun to attend. It's an excellent chance to showcase your photographic abilities.Simply uploading your work to us is all that is required. Participants must submit their photos using the attached Google form between September 3 and September 22. The photo's theme could be related to food or have a night-time or dark-tone.",
         numberofrounds:1,
         totalwinners:1,
         firstprizecash:500,

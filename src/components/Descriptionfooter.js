@@ -16,16 +16,16 @@ function Descriptionfooter(detailss) {
     
     <div className="bg-[#212121] float-right w-full h-full" id="footersection">
       <div className="p-8">
-        <a href='https://sairam.edu.in/nss/'><img className="float-left w-20 h-20" src={nsslogo} alt="nsslogo"></img></a>
-        <a href='https://sairam.edu.in/'><img className="float-right w-20 h-20" src={seclogo} alt="seclogo"></img></a>
+        <a href='https://sairam.edu.in/nss/' target="_blank"><img className="float-left w-20 h-20" src={nsslogo} alt="nsslogo"></img></a>
+        <a href='https://sairam.edu.in/' target="_blank"><img className="float-right w-20 h-20" src={seclogo} alt="seclogo"></img></a>
       </div>
       <div className="w-full flex flex-col justify-center p-10 sm:flex-row">
           <div className="sm:-mr-12 md:-mr-24">
             <div className="w-full flex justify-center items-center h-full p-5">
-              <img className="w-60 h-40 sm:w-72 md:w-full md:h-48 lg:h-72" src={yellow} alt="footer"></img>
+              <img className="w-60 h-56 sm:w-72 md:w-full md:h-56 lg:h-72" src={yellow} alt="footer"></img>
                 <div className="absolute text-white text-center text-[12px] lg:text-[16px]">
                   <h1 className="font-bold font-michroma text-[#B760B1] text-[14px] lg:text-[22px]">EMAIL</h1>
-                  <p className="lg:leading-10">{details.contactemail}</p>
+                  <a href={details.contactemail} target="_blank"><p className="lg:leading-10">{details.contactemail.slice(46,70)}</p></a>
                   <p className="">Send your queries <br/> with the subject - <br/>"Help Desk - Your subject"</p>
                 </div>
             </div>
@@ -44,11 +44,12 @@ function Descriptionfooter(detailss) {
           </div> 
           <div className="sm:-ml-12 md:-ml-24">
             <div className="w-full flex justify-center items-center h-full p-5">
-              <img className="w-60 h-40 sm:w-72 md:w-full md:h-48 lg:h-72" src={yellow} alt="footer"></img>
+              <img className="w-60 h-56 sm:w-72 md:w-full md:h-56 lg:h-72" src={yellow} alt="footer"></img>
               <div className="absolute text-white text-center">
                   <h1 className="sm:leading-10 font-bold font-michroma text-[#B760B1] text-[14px] lg:text-[22px]">FOR HELP</h1>
-                  <p className=" text-lg ">{details.contactperson1}<br /><b className='text-sm lg:text-md'>{details.contact1}</b></p>
-                  <p className=" text-lg ">{details.contactperson2}<br /><b className='text-sm lg:text-md'>{details.contact2}</b></p>
+                  <p className=" text-lg ">{details.contactperson1}<br /><a href={details.contact1}><b className='text-sm lg:text-md'>{details.contact1.slice(5,15)}</b></a></p>
+                  <p className=" text-lg ">{details.contactperson2}<br /><a href={details.contact2}><b className='text-sm lg:text-md'>{details.contact2.slice(5,15)}</b></a></p>
+                  <p className=" text-lg ">{details.contactperson3}<br /><a href={details.contact3}><b className='text-sm lg:text-md'></b></a></p>
                 </div>
             </div>
           </div>

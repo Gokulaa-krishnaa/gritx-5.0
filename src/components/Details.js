@@ -4,16 +4,20 @@ function Details(detailss) {
 
   const [details,setdetails] = useState(detailss.Descriptioncontent);
   const [instruction,setInstructions]= useState(details[0].instruction);
-  // console.log(instruction)
+  let r4;
   useEffect(()=>{
     const r2 = document.getElementById("2");
     const r3 = document.getElementById("3");
     const a2 = document.getElementById("activelayer2");
     const a3 = document.getElementById("activelayer3");
+    
+    {details[0].round4 && (r4 = document.getElementById("4"));}
     r2.classList.add("hidden");
     r3.classList.add("hidden");
     a2.classList.add("hidden");
     a3.classList.add("hidden");
+    {details[0].round4 && (r4.classList.add("hidden"));}
+    
   });
   
 
@@ -22,6 +26,7 @@ function Details(detailss) {
       const r1 = document.getElementById("1");
       const r2 = document.getElementById("2");
       const r3 = document.getElementById("3");
+      {details[0].round4 && (r4 = document.getElementById("4"));}
       const a1 = document.getElementById("activelayer1");
       const a2 = document.getElementById("activelayer2");
       const a3 = document.getElementById("activelayer3");
@@ -32,6 +37,7 @@ function Details(detailss) {
         a1.classList.remove("hidden");
         a2.classList.add("hidden");
         a3.classList.add("hidden");
+        {details[0].round4 && (r4.classList.add("hidden"));}
       }
     }
 
@@ -74,8 +80,8 @@ function Details(detailss) {
 
   return (
     <div>
-        <div className="flex justify-center p-10">
-        <div className=" w-11/12 sm:w-3/4 h-auto p-10 bg-primaryblack ">
+        <div className="flex justify-center sm:p-10">
+        <div className="w-full md:w-11/12 sm:w-3/4 h-auto p-10 bg-primaryblack ">
 
            
                 
@@ -103,7 +109,7 @@ function Details(detailss) {
 
             {details.map((e)=>(
                  <div className=" items-center justify-center mt-5"  >  
-                  <div className="m-auto  w-11/12 border-10 bg-[#191919] drop-shadow-lg " >
+                  <div className="m-auto  w-12/12 border-10 bg-[#191919] drop-shadow-lg " >
       
                     <div className="sm:m-7 p-4 " id={e.id} >
                         

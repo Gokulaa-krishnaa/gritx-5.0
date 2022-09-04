@@ -16,6 +16,10 @@ import  Mindtwisterdetails  from "./contents/mindtwisterdetails";
 import Hyperzestdetails from "./contents/hyperzest";
 import Pixmedetails from "./contents/pixme"
 import Dazeplaydetails from "./contents/dazeplay";
+import Squidgamedetails from './contents/squidgame';
+import Campusambassadordetails from './contents/campusambassador';
+import Thewarriorsleaguedetails from './contents/thewarriorsleague';
+import Funnyweaver from './contents/funnyweaver';
 import mindtwisterslogo from "./assets/mindtwisterslogo.png";
 import hyperzestlogo from "./assets/hyperzestlogo.png";
 import funnyweaverlogo from "./assets/funnyweaverlogo.png";
@@ -78,30 +82,30 @@ root.render(
       } />
       <Route path="/squidgame" element={
         <>
-          <Description Descriptioncontent={Mindtwisterdetails.Mindtwisterdetails} eventlogo={squidgamelogo}/>
-          <Details Descriptioncontent={Mindtwisterdetails.Mindtwistersroundsdetails}  />
-          <Descriptionfooter Descriptioncontent={Mindtwisterdetails.Mindtwisterscontactdetails} />
+          <Description Descriptioncontent={Squidgamedetails.Squidgamedetails} eventlogo={squidgamelogo}/>
+          <Details Descriptioncontent={Squidgamedetails.Squidgameroundsdetails}  />
+          <Descriptionfooter Descriptioncontent={Squidgamedetails.Squidgamecontactdetails} />
         </>
       } />
       <Route path="/funnyweaver" element={
         <>
-          <Description Descriptioncontent={Mindtwisterdetails.Mindtwisterdetails} eventlogo={funnyweaverlogo}/>
-          <Details Descriptioncontent={Mindtwisterdetails.Mindtwistersroundsdetails}  />
-          <Descriptionfooter Descriptioncontent={Mindtwisterdetails.Mindtwisterscontactdetails} />
+          <Description Descriptioncontent={Funnyweaver.Funnyweaverdetails} eventlogo={funnyweaverlogo}/>
+          <Details Descriptioncontent={Funnyweaver.Funnyweaverroundsdetails}  />
+          <Descriptionfooter Descriptioncontent={Funnyweaver.Funnyweavercontactdetails} />
         </>
       } />
       <Route path="/thewarriorsleague" element={
         <>
-          <Description Descriptioncontent={Mindtwisterdetails.Mindtwisterdetails} eventlogo={thewarriorsleaguelogo}/>
-          <Details Descriptioncontent={Mindtwisterdetails.Mindtwistersroundsdetails}  />
-          <Descriptionfooter Descriptioncontent={Mindtwisterdetails.Mindtwisterscontactdetails}/>
+          <Description Descriptioncontent={Thewarriorsleaguedetails.Thewarriorsleaguedetails} eventlogo={thewarriorsleaguelogo}/>
+          <Details Descriptioncontent={Thewarriorsleaguedetails.Thewarriorsleagueroundsdetails}  />
+          <Descriptionfooter Descriptioncontent={Thewarriorsleaguedetails.Thewarriorsleaguecontactdetails}/>
         </>
       } />
       <Route path="/campusambassador" element={
         <>
-          <Description Descriptioncontent={Mindtwisterdetails.Mindtwisterdetails} eventlogo={campusambassadorlogo}/>
-          <Details Descriptioncontent={Mindtwisterdetails.Mindtwistersroundsdetails}  />
-          <Descriptionfooter Descriptioncontent={Mindtwisterdetails.Mindtwisterscontactdetails}/>
+          <Description Descriptioncontent={Campusambassadordetails.Campusambassadordetails} eventlogo={campusambassadorlogo}/>
+          <Details Descriptioncontent={Campusambassadordetails.Campusambassadorroundsdetails}  />
+          <Descriptionfooter Descriptioncontent={Campusambassadordetails.Campusambassadorcontactdetails}/>
         </>
       } />
 

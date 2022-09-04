@@ -35,10 +35,10 @@ const Mindtwisterscontactdetails=()=>{
     const contactdetails = {
         contactperson1:"Avinash M",
         contactperson2:"Hariharan",
-        contact1:"9790877950",
-        contact2:"9677174823",
+        contact1:"tel:+9790877950",
+        contact2:"tel:+9677174823",
         coordinators:["Avinash M","Hari Haran","Diya"],
-        contactemail:"mindtwister@gmail.com",
+        contactemail:"https://mail.google.com/mail/?view=cm&fs=1&to=mindtwister@gmail.com",
     }
 
     return contactdetails;

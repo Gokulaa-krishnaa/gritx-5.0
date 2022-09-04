@@ -11,8 +11,8 @@ function Footer() {
   return (
     <div className="bg-[#212121] float-right w-full lg:w-11/12 lg:pl-10 h-full" id="footersection">
       <div className="p-8">
-        <a href='https://sairam.edu.in/nss/'><img className="float-left w-12 h-12 xss:w-20 xss:h-20" src={nsslogo} alt="nsslogo"></img></a>
-        <a href='https://sairam.edu.in/'><img className="float-right w-12 h-12 xss:w-20 xss:h-20" src={seclogo} alt="seclogo"></img></a>
+        <a href='https://sairam.edu.in/nss/' target="_blank"><img className="float-left w-12 h-12 xss:w-20 xss:h-20" src={nsslogo} alt="nsslogo"></img></a>
+        <a href='https://sairam.edu.in/' target="_blank"><img className="float-right w-12 h-12 xss:w-20 xss:h-20" src={seclogo} alt="seclogo"></img></a>
       </div>
       <div className="w-full flex flex-col justify-center p-10 sm:flex-row">
           <div className="sm:-mr-12 md:-mr-24">
