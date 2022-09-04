@@ -13,6 +13,7 @@ import Details from './components/Details';
 import Descriptionfooter from './components/Descriptionfooter';
 import  Mindtwisterdetails  from "./contents/mindtwisterdetails";
 import Hyperzestdetails from "./contents/hyperzest";
+import Pixmedetails from "./contents/pixme"
 import Dazeplaydetails from "./contents/dazeplay";
 import mindtwisterslogo from "./assets/mindtwisterslogo.png";
 import hyperzestlogo from "./assets/hyperzestlogo.png";
@@ -22,8 +23,8 @@ import campusambassadorlogo from "./assets/campusambassadorlogo.png";
 import pixmelogo from "./assets/pixmelogo.png";
 import thewarriorsleaguelogo from "./assets/warriorsleaguelogo.png";
 import squidgamelogo from "./assets/squidgamelogo.png";
-import hyperzestbrochure from "./assets/hyperzestbrochure.pdf"
-import Squidgame from './components/Squidgame';
+import hyperzestbrochure from "./assets/hyperzestbrochure.pdf";
+import dazeplaybrochure from './assets/dazeplaybrochure.pdf';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -35,7 +36,6 @@ root.render(
         <Navbar />
         <Home />
         <EventsSlide />
-        <Squidgame />
         <Campusambassador />
         <Busroute />
         <Footer />
@@ -62,16 +62,16 @@ root.render(
       } />
       <Route path="/dazeplay" element={
         <>
-          <Description Descriptioncontent={Dazeplaydetails.Dazeplaydetails} eventlogo={dazeplaylogo}/>
+          <Description Descriptioncontent={Dazeplaydetails.Dazeplaydetails} eventlogo={dazeplaylogo} brochure={dazeplaybrochure}/>
           <Details Descriptioncontent={Dazeplaydetails.Dazeplaysroundsdetails}  />
           <Descriptionfooter Descriptioncontent={Dazeplaydetails.Dazeplaycontactdetails}/>
         </>
       } />
       <Route path="/pixme" element={
         <>
-          <Description Descriptioncontent={Mindtwisterdetails.Mindtwisterdetails} eventlogo={pixmelogo}/>
-          <Details Descriptioncontent={Mindtwisterdetails.Mindtwistersroundsdetails}  />
-          <Descriptionfooter Descriptioncontent={Mindtwisterdetails.Mindtwisterscontactdetails} />
+          <Description Descriptioncontent={Pixmedetails.Pixmedetails} eventlogo={pixmelogo}/>
+          <Details Descriptioncontent={Pixmedetails.Pixmeroundsdetails}  />
+          <Descriptionfooter Descriptioncontent={Pixmedetails.Pixmecontactdetails} />
         </>
       } />
       <Route path="/squidgame" element={
