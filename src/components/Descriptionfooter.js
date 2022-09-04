@@ -68,9 +68,9 @@ function Descriptionfooter(detailss) {
           </div>
           <div className="flex justify-center w-4/5">
             <div className="flex flex-row py-10">
-              <a href="https://instagram.com/sairamnss?igshid=YmMyMTA2M2Y="><img className="w-16 h-16 p-2 scale-100 hover:scale-125" src={instalogo} alt="instagram"></img></a>
-              <a href="https://www.linkedin.com/company/nss-sairam/"><img className="w-16 h-16 p-2 scale-100 hover:scale-125" src={linkedinlogo} alt="twitter"></img></a>
-              <a href=" https://twitter.com/NSSSAIRAM?s=20&t=I-QlWVigzBdfoOMhxAbK0A"><img className="w-16 h-16 p-2 scale-100 hover:scale-125" src={twitterlogo} alt="linkedin"></img></a>
+              <a href="https://instagram.com/sairamnss?igshid=YmMyMTA2M2Y="  target="_blank"><img className="w-16 h-16 p-2 scale-100 hover:scale-125" src={instalogo} alt="instagram"></img></a>
+              <a href="https://www.linkedin.com/company/nss-sairam/" target="_blank"><img className="w-16 h-16 p-2 scale-100 hover:scale-125" src={linkedinlogo} alt="twitter"></img></a>
+              <a href=" https://twitter.com/NSSSAIRAM?s=20&t=I-QlWVigzBdfoOMhxAbK0A" target="_blank"><img className="w-16 h-16 p-2 scale-100 hover:scale-125" src={twitterlogo} alt="linkedin"></img></a>
             </div>
           </div>
         </div>

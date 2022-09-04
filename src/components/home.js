@@ -7,7 +7,7 @@ const Home = () => {
             
             <div >
                 
-            <section className="pt-2 w-full h-full my-5 md:my-20 lg:pl-12 xl:pl-14 float-right">
+            <section className="pt-2 w-full h-full my-10 mt-16 sm:my-24 lg:my-20 lg:pl-12 xl:pl-14 float-right">
             
             <div >
             
@@ -21,10 +21,10 @@ const Home = () => {
                         </div>
                         <div className=" w-full text-fadewhite font-light p-3 ">
                         
-                        <p className='flex items-center justify-center mt-10 text-center text-xl'>Sairam NSS is presenting GRITx on the occasion of NSS Day. This time it's magnificent than before. We bring you GRITx 5.0, this time it's unique.
-GRITx 5.0 Roots for the youth's zeal and the genius in them. Showcase your wit in amusing non-technical games. Are you a mastermind? bring it on in the technical events! 
-GRITx is a grand event that is composed of spectacular contests viz Mind Twisters -To melt your brain, The warrior's league-Touchdown! Slam Dunk! Goal! check your sports addiction and many more! You will get to participate in mind blowing competition and compete with worthy opponents. Don't hold back yourself, let out the challenger in you. 
-The mode of events will be partly online/offline.</p>
+                        <p className='flex items-center justify-center mt-10 text-center text-md sm:text-xl'>Sairam NSS is presenting GRITx on the occasion of NSS Day. This time it's magnificent than before. We bring you GRITx 5.0, this time it's unique.
+                        GRITx 5.0 Roots for the youth's zeal and the genius in them. Showcase your wit in amusing non-technical games. Are you a mastermind? bring it on in the technical events! 
+                        GRITx is a grand event that is composed of spectacular contests viz Mind Twisters -To melt your brain, The warrior's league-Touchdown! Slam Dunk! Goal! check your sports addiction and many more! You will get to participate in mind blowing competition and compete with worthy opponents. Don't hold back yourself, let out the challenger in you. 
+                        The mode of events will be partly online/offline.</p>
                         
                            
                         </div>

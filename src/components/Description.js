@@ -1,6 +1,5 @@
 import React, { useState, useEffect} from "react";
 import backbtn from "../assets/backbtn.png";
-import mindtwisterslogo from "../assets/mindtwisterslogo.png";
 import { Link } from "react-router-dom";
 function Description(detailss) {
 
@@ -19,7 +18,7 @@ function Description(detailss) {
           <div className="">
             <div className={details.overallclass}>
               <div className=" flex justify-center sm:pt-12 lg:-ml-6">
-                <div className="  h-2/5 w-10/12 mt-6 sm:mt-10 md:w-9/12 bg-gradient-to-r from-[#000000]/70 to-transparent ">
+                <div className="  h-2/5 w-10/12 mt-6 sm:mt-10 md:w-9/12 bg-gradient-to-r from-[#000000]/90 to-transparent ">
                   <div className=" sm:flex sm:justify-end">
                     <div className="sm:grid sm:grid-cols-2 sm:gap-14 ">
                       <a href={detailss.brochure} className="w-full h-full" download>
@@ -27,10 +26,8 @@ function Description(detailss) {
                          GET BROCHURE
                       </button>  
                       </a>                     
+                      <a href={details.registrationlink} target="_blank" className=" font-semibold hover:bg-brightgreen hover:text-primaryblack md:text-base lg:text-lg xl:text-xl px-4 py-2 sm:mt-10 text-center border-brightgreen border-4 text-brightgreen "><button className="text-center">REGISTER</button></a>
                       
-                      <button className=" font-semibold hover:bg-brightgreen hover:text-primaryblack md:text-base lg:text-lg xl:text-xl px-4 py-2 sm:mt-10 border-brightgreen border-4 text-brightgreen">
-                        REGISTER
-                      </button>
                     </div>
                   </div>
 
@@ -46,6 +43,7 @@ function Description(detailss) {
                   </div>
                   <div className="h-auto sm:w-2/5 pt-2 pl-7">
                     <h1 className="text-[#E6BB5B] font-bold  sm:text-sm md:text-sm lg:text-md xl:text-xl">
+                      <i className="text-gold text-light">Registration closes on </i>  <br />
                     {details.month} {details.date}, {details.year}
                     </h1>
                   </div>
@@ -121,6 +119,8 @@ function Description(detailss) {
 
                     <div className=" sm:w-11/12">
                       <p className="text-white sm:text-sm md:text-base lg:text-md xl:text-lg">
+                        <b className="text-purple text-lg">{details.eventtagline}</b> 
+                        <br />
                         {details.eventdescription}
                       </p>
 
@@ -189,38 +189,40 @@ function Description(detailss) {
             </div>
             <div className="flex flex-row w-full items-center pt-4 pb-8 bg-[url('assets/webbg1.png') bg-contain bg-no-repeat">
               <div className="w-1/2 pl-12">
-                  <div className="h-auto w-1/6 pl-6 text-2xl">
+                  <div className="h-auto w-1/6 xs:pl-6 text-2xl">
                     <h1 className="text-purple font-bold">
-                      MIND
+                    {details.eventfirstname}
                     </h1>
                   </div>
-                  <div className="h-auto w-1/5 pt-1 pl-6 text-2xl">
+                  <div className="h-auto w-1/5 pt-1 xs:pl-6 text-2xl">
                     <h1 className="text-white font-bold">
-                      TWISTERS
+                    {details.eventlastname}
                     </h1>
                   </div>
-                  <div className="h-auto sm:w-2/5 pt-2 pl-7 text-md">
+                  <div className="h-auto sm:w-2/5 pt-2 xs:pl-7 text-md">
                     <h1 className="text-[#E6BB5B] font-bold">
-                      Sept 24, 2022
+                      <i className="text-gold text-light">Registration closes on </i>  <br />
+                      {details.month} {details.date}, {details.year}
                     </h1>
                   </div>
               </div>
               <div className="w-1/2 flex justify-center">
                 <img
                   className="text-white h-40 w-40"
-                  src={mindtwisterslogo}
+                  src={detailss.eventlogo}
                   alt="mind twisters logo">
                 </img>
               </div>
             </div>
             <div className=" sm:flex sm:justify-end">
                 <div className="flex flex-col items-center">
+                <a href={detailss.brochure} className=" " download>
                   <button className="w-40 h-10 m-4 border-none font-normal rounded-lg bg-gradient-to-r from-purple via-[#E36595] to-[#E6BB5B] text-white">
                     GET BROCHURE
-                  </button>
-                  <button className="w-40 py-2 font-semibold border-brightgreen hover:text-primaryblack border-2 text-brightgreen">
+                  </button></a>
+                  <a href={details.registrationlink} target="_blank"><button className="w-40 py-2 font-semibold border-brightgreen hover:text-primaryblack border-2 text-brightgreen">
                     REGISTER
-                  </button>
+                  </button></a>
                 </div>
             </div>
         </div>
@@ -231,6 +233,8 @@ function Description(detailss) {
             </div>
               <div className="py-4 px-20">
                 <p className="text-white text-justify">
+                <b className="text-purple text-lg">{details.eventtagline}</b> 
+                <br />
                   {details.eventdescription}
                 </p>
               </div>
@@ -260,14 +264,15 @@ function Description(detailss) {
                 First Prize
               </h1>
             </div>
-            <div>
+            {console.log(details.issecondprizecash)}
+            if(details.issecondprizecash){ <div>
               <h1 className="text-purple text-center font-bold text-2xl py-2">
-              Rs.{details.secondprizecash}
+              Rs.{ details.secondprizecash}
               </h1>
               <h1 className="text-brightgreen text-center font-bold text-2xl py-2">
                 Second prize
               </h1>
-            </div>
+            </div>}
             <div>
               <h1 className="text-purple text-center font-bold text-2xl py-2">
               Rs.{details.thirdprizecash}
