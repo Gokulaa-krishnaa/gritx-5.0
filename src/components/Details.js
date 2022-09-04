@@ -116,7 +116,7 @@ function Details(detailss) {
                         <h3 className="text-[#B760B1] text-md sm:text-lg md:text-xl lg:text-2xl xl:text-3xl font-rubik-one"> {e.roundtitle} </h3>
                         <h5 className="text-yellow text-light text-sm sm:text-md  lg:text-xl italic">{e.month} {e.date},  {e.year}</h5>
                         <h6 className="text-gold text-light text-sm sm:text-md  lg:text-xl italic">{e.modeofevent}</h6>
-                        <p className="text-white  text-md md:text-lg lg:text-xl sm:pt-2 md:text-base">
+                        <p className="text-white  text-md md:text-lg lg:text-xl sm:pt-2">
                                 {e.rounddescription}
                                
                                

@@ -35,8 +35,9 @@ const Navbar = () => {
                                 <ul className='text-white w-full  grid grid-rows-5 justify-center items-center h-full'>
                                     <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><Link to="#homesection">Home</Link></li>
                                     <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><Link to="#eventssection">Events</Link></li>
-                                    <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><Link to="#campusambassadorsection">Campus <br /> Ambassor</Link></li>
-                                    <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><Link to="#footersection">About us</Link></li>
+                                    <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><Link to="#squidgamesection">Offline <br/> Event</Link></li>
+                                    <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><Link to="#campusambassadorsection">Campus <br/> Ambassador</Link></li>
+                                    <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><Link to="#bussection">Reach us</Link></li>
                                     <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><Link to="#footersection">Contact us</Link></li>
                                 </ul>
                             </div>
@@ -83,8 +84,9 @@ const Navbar = () => {
             <div className="w-full grid place-items-center pt-20 pb-80">
                 <Link to="#homesection" onClick={togglenavlist} className="block mx-12 mt-4  text-lg  font-semibold text-center  text-fadewhite py-2 px-4 hover:text-gold">Home</Link>
                 <Link to="#eventssection" onClick={togglenavlist} className="block mx-12 mt-4  text-lg  font-semibold text-center  text-fadewhite py-2 px-4 hover:text-gold">Events</Link>
-                <Link to="#campusambassadorsection" onClick={togglenavlist} className="block mx-12 mt-4  text-lg  font-semibold text-center   text-fadewhite py-2 px-4 hover:text-gold">Campus <br /> Ambassor</Link>
-                <Link to="#footersection" onClick={togglenavlist} className="block mx-12 mt-4  text-lg   font-semibold text-center  text-fadewhite py-2 px-4  hover:text-gold">About us</Link>
+                <Link to="#squidgamesection" onClick={togglenavlist} className="block mx-12 mt-4  text-lg  font-semibold text-center   text-fadewhite py-2 px-4 hover:text-gold">Offline<br/>Event</Link>
+                <Link to="#campusambassadorsection" onClick={togglenavlist} className="block mx-12 mt-4  text-lg  font-semibold text-center   text-fadewhite py-2 px-4 hover:text-gold">Campus <br /> Ambassador</Link>
+                <Link to="#bussection" onClick={togglenavlist} className="block mx-12 mt-4  text-lg   font-semibold text-center  text-fadewhite py-2 px-4  hover:text-gold">Reach us</Link>
                 <Link to="#footersection" onClick={togglenavlist} className="block mx-12 mt-4  text-lg   font-semibold text-center  text-fadewhite py-2 px-4  hover:text-gold">Contact us</Link>
                 
             </div>

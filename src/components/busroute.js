@@ -12,7 +12,7 @@ const Busroute = () =>{
                     
                         <div >
                             <div className=" w-10/12 h-full m-3 ">
-                                <h1 className="text-2xl md:text-3xl text-purple border-l-4  font-semibold border-l-gold pl-2">How to reach our college? </h1>
+                                <h1 className="text-2xl md:text-3xl text-purple border-l-4 hover:border-l-8 font-semibold border-l-gold pl-2">How to reach our college? </h1>
                             </div>
                             <div className=" text-fadewhite font-light p-3 sm:flex justify-center items-center">
                         

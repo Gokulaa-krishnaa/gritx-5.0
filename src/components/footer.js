@@ -65,8 +65,9 @@ function Footer() {
           <div className="flex justify-center w-4/5">
             <div className="flex flex-row py-10">
               <a href="https://instagram.com/sairamnss?igshid=YmMyMTA2M2Y=" target="_blank" rel="noreferrer"><img className="w-16 h-16 p-2 scale-100 hover:scale-125" src={instalogo} alt="instagram"></img></a>
-              <a href="https://www.linkedin.com/company/nss-sairam/" target="_blank" rel="noreferrer"><img className="w-16 h-16 p-2 scale-100 hover:scale-125" src={linkedinlogo} alt="twitter"></img></a>
-              <a href=" https://twitter.com/NSSSAIRAM?s=20&t=I-QlWVigzBdfoOMhxAbK0A" target="_blank" rel="noreferrer"><img className="w-16 h-16 p-2 scale-100 hover:scale-125" src={twitterlogo} alt="linkedin"></img></a>
+              <a href="https://www.linkedin.com/company/nss-sairam/" target="_blank" rel="noreferrer"><img className="w-16 h-16 p-2 scale-100 hover:scale-125" src={linkedinlogo} alt="linkedin"></img></a>
+              <a href=" https://twitter.com/NSSSAIRAM?s=20&t=I-QlWVigzBdfoOMhxAbK0A" target="_blank" rel="noreferrer"><img className="w-16 h-16 p-2 scale-100 hover:scale-125" src={twitterlogo} alt="twitter"></img></a>
+              <a href=" https://www.youtube.com/channel/UCTZlNnS-yY9KRycRD5sx6ZA" target="_blank" rel="noreferrer"><img className="w-16 h-16 p-2 scale-100 hover:scale-125" alt="youtube"></img></a>
             </div>
           </div>
         </div>
