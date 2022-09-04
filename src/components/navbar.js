@@ -2,6 +2,8 @@ import gritxlogo from '../assets/grit x main logo.png';
 import instalogo from '../assets/instalogo.png';
 import twitterlogo from '../assets/twitterlogo.png';
 import linkedinlogo from '../assets/linkedinlogo.png';
+// import { Link } from "react-router-dom";
+import { HashLink as Link } from 'react-router-hash-link';
 import { useState, useRef } from "react";
 
 const Navbar = () => {
@@ -31,18 +33,18 @@ const Navbar = () => {
                             </div>
                             <div className="navlist  row-span-3">
                                 <ul className='text-white w-full  grid grid-rows-5 justify-center items-center h-full'>
-                                    <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><a href="#homesection">Home</a></li>
-                                    <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><a href="#eventssection">Events</a></li>
-                                    <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><a href="#campusambassadorsection">Campus <br /> Ambassor</a></li>
-                                    <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><a href="#footersection">About us</a></li>
-                                    <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><a href="#footersection">Contact us</a></li>
+                                    <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><Link to="#homesection">Home</Link></li>
+                                    <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><Link to="#eventssection">Events</Link></li>
+                                    <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><Link to="#campusambassadorsection">Campus <br /> Ambassor</Link></li>
+                                    <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><Link to="#footersection">About us</Link></li>
+                                    <li className='text-fadewhite font-semibold hover:text-yellow hover:border-b-gold hover:border-b-2 text-center'><Link to="#footersection">Contact us</Link></li>
                                 </ul>
                             </div>
                             <div className="connectus row-span-1 w-full flex justify-center items-center">
                                 <div className='grid grid-cols-3 p-5'>
-                                    <div className='w-4/5 h-5/5 scale-100 hover:scale-125 drop-shadow-3xl'><a href="https://instagram.com/sairamnss?igshid=YmMyMTA2M2Y="><img  src={instalogo} className="w-full h-full" /></a></div>
-                                    <div className='w-4/5 h-5/5 scale-100 hover:scale-125 drop-shadow-3xl'><a href="https://www.linkedin.com/company/nss-sairam/"><img  src={linkedinlogo} className="w-full h-full" /></a></div>
-                                    <div className='w-4/5 h-5/5 scale-100 hover:scale-125 drop-shadow-3xl'><a href="https://twitter.com/NSSSAIRAM?s=20&t=I-QlWVigzBdfoOMhxAbK0A"><img  src={twitterlogo} className="w-full h-full" /></a></div>
+                                    <div className='w-4/5 h-5/5 scale-100 hover:scale-125 drop-shadow-3xl'><Link to="https://instagram.com/sairamnss?igshid=YmMyMTA2M2Y="><img  src={instalogo} className="w-full h-full" /></Link></div>
+                                    <div className='w-4/5 h-5/5 scale-100 hover:scale-125 drop-shadow-3xl'><Link to="https://www.Linkedin.com/company/nss-sairam/"><img  src={linkedinlogo} className="w-full h-full" /></Link></div>
+                                    <div className='w-4/5 h-5/5 scale-100 hover:scale-125 drop-shadow-3xl'><Link to="https://twitter.com/NSSSAIRAM?s=20&t=I-QlWVigzBdfoOMhxAbK0A"><img  src={twitterlogo} className="w-full h-full" /></Link></div>
                                 </div>
                                 
                             </div>
@@ -79,11 +81,11 @@ const Navbar = () => {
         <div className={isActive?'fixed grid justify-items-start w-full h-screen grid-rows-8 top-0 left-0  bg-primaryblack/90 z-20' :'hidden fixed justify-items-start w-full  h-screen grid-rows-8 top-0 left-0  bg-fadewhite/80 z-20'}  name="menu" ref={navlist} >
             <button onClick={togglenavlist} className="block float-right ml-4 mt-2 p-2 text-base font-semibold"> <svg class="w-6 h-6" fill="none" stroke="#B57E1A" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M6 18L18 6M6 6l12 12"></path></svg></button>
             <div className="w-full grid place-items-center pt-20 pb-80">
-                <a href="#homesection" onClick={togglenavlist} className="block mx-12 mt-4  text-lg  font-semibold text-center  text-fadewhite py-2 px-4 hover:text-gold">Home</a>
-                <a href="#eventssection" onClick={togglenavlist} className="block mx-12 mt-4  text-lg  font-semibold text-center  text-fadewhite py-2 px-4 hover:text-gold">Events</a>
-                <a href="#campusambassadorsection" onClick={togglenavlist} className="block mx-12 mt-4  text-lg  font-semibold text-center   text-fadewhite py-2 px-4 hover:text-gold">Campus <br /> Ambassor</a>
-                <a href="#footersection" onClick={togglenavlist} className="block mx-12 mt-4  text-lg   font-semibold text-center  text-fadewhite py-2 px-4  hover:text-gold">About us</a>
-                <a href="#footersection" onClick={togglenavlist} className="block mx-12 mt-4  text-lg   font-semibold text-center  text-fadewhite py-2 px-4  hover:text-gold">Contact us</a>
+                <Link to="#homesection" onClick={togglenavlist} className="block mx-12 mt-4  text-lg  font-semibold text-center  text-fadewhite py-2 px-4 hover:text-gold">Home</Link>
+                <Link to="#eventssection" onClick={togglenavlist} className="block mx-12 mt-4  text-lg  font-semibold text-center  text-fadewhite py-2 px-4 hover:text-gold">Events</Link>
+                <Link to="#campusambassadorsection" onClick={togglenavlist} className="block mx-12 mt-4  text-lg  font-semibold text-center   text-fadewhite py-2 px-4 hover:text-gold">Campus <br /> Ambassor</Link>
+                <Link to="#footersection" onClick={togglenavlist} className="block mx-12 mt-4  text-lg   font-semibold text-center  text-fadewhite py-2 px-4  hover:text-gold">About us</Link>
+                <Link to="#footersection" onClick={togglenavlist} className="block mx-12 mt-4  text-lg   font-semibold text-center  text-fadewhite py-2 px-4  hover:text-gold">Contact us</Link>
                 
             </div>
         </div>

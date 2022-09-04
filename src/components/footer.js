@@ -11,8 +11,8 @@ function Footer() {
   return (
     <div className="bg-[#212121] float-right w-full lg:w-11/12 lg:pl-10 h-full" id="footersection">
       <div className="p-8">
-        <a href='https://sairam.edu.in/nss/'><img className="float-left w-20 h-20" src={nsslogo} alt="nsslogo"></img></a>
-        <a href='https://sairam.edu.in/'><img className="float-right w-20 h-20" src={seclogo} alt="seclogo"></img></a>
+        <a href='https://sairam.edu.in/nss/'><img className="float-left w-12 h-12 xss:w-20 xss:h-20" src={nsslogo} alt="nsslogo"></img></a>
+        <a href='https://sairam.edu.in/'><img className="float-right w-12 h-12 xss:w-20 xss:h-20" src={seclogo} alt="seclogo"></img></a>
       </div>
       <div className="w-full flex flex-col justify-center p-10 sm:flex-row">
           <div className="sm:-mr-12 md:-mr-24">
@@ -64,9 +64,9 @@ function Footer() {
           </div>
           <div className="flex justify-center w-4/5">
             <div className="flex flex-row py-10">
-              <a href="https://instagram.com/sairamnss?igshid=YmMyMTA2M2Y="><img className="w-16 h-16 p-2 scale-100 hover:scale-125" src={instalogo} alt="instagram"></img></a>
-              <a href="https://www.linkedin.com/company/nss-sairam/"><img className="w-16 h-16 p-2 scale-100 hover:scale-125" src={linkedinlogo} alt="twitter"></img></a>
-              <a href=" https://twitter.com/NSSSAIRAM?s=20&t=I-QlWVigzBdfoOMhxAbK0A"><img className="w-16 h-16 p-2 scale-100 hover:scale-125" src={twitterlogo} alt="linkedin"></img></a>
+              <a href="https://instagram.com/sairamnss?igshid=YmMyMTA2M2Y=" target="_blank" rel="noreferrer"><img className="w-16 h-16 p-2 scale-100 hover:scale-125" src={instalogo} alt="instagram"></img></a>
+              <a href="https://www.linkedin.com/company/nss-sairam/" target="_blank" rel="noreferrer"><img className="w-16 h-16 p-2 scale-100 hover:scale-125" src={linkedinlogo} alt="twitter"></img></a>
+              <a href=" https://twitter.com/NSSSAIRAM?s=20&t=I-QlWVigzBdfoOMhxAbK0A" target="_blank" rel="noreferrer"><img className="w-16 h-16 p-2 scale-100 hover:scale-125" src={twitterlogo} alt="linkedin"></img></a>
             </div>
           </div>
         </div>

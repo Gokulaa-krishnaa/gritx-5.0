@@ -16,7 +16,7 @@ const Campusambassador = () => {
                         <img src={campusambassadorlogo} className=" w-3/5 md:w-4/5  h-4/5 m-auto p-4" alt="campusambassadorlogo" />
                     </div>
                     <div >
-                        <div className="content text-fadewhite font-light p-3 flex justify-center items-center	">
+                        <div className="content text-center text-fadewhite font-light p-3 flex justify-center items-center	">
                             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur iaculis facilisis nisl, sed tincidunt massa posuere vel. Vivamus semper lectus et justo scelerisque mollis. Integer tempor neque venenatis, maximus nibh id, suscipit
                                 metus. Suspendisse condimentum blandit auctor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Morbi vitae sodales nisi. In porttitor diam arcu, eu mattis ipsum dignissim a. In velit
                                 quam, mattis in tempus ac, sollicitudin non ex.</p>
