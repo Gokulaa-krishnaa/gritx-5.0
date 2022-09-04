@@ -6,6 +6,10 @@ module.exports = {
   theme: {
     
     extend: {
+      screens: {
+        'xs': '350px',
+        'xss': '420px'
+      },
       fontFamily:{
         'rubik-one':['Rubik One']
       },
@@ -37,8 +41,14 @@ module.exports = {
         'twitterlogo': "url('./assets/twitterlogo.png')",
         'linkedinlogo': "url('./assets/linkedinlogo.png')",
         "mindtwisterbg":"url('./assets/mindtwisterbg.png')",
-        "hyperzestbg":"url('./assets/mindtwisterbg.png')",
-      }
+        "hyperzestbg":"url('./assets/hyperzestbg.png')",
+        "dazeplaybg":"url('./assets/dazeplaybg.png')",
+        "funnyweaversbg":"url('./assets/funnyweaversbg.png')",
+        "squidgamebg":"url('./assets/squidgamebg.png')",
+        "campusambassadorbg":"url('./assets/campusambassadorbg.png')",
+        "thewarriorsleaguebg":"url('./assets/thewarriorsleaguebg.png')",
+        "pixmebg":"url('./assets/pixmebg.png')",
+      },
     },
   },
   plugins: [],
