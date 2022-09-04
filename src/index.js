@@ -7,6 +7,7 @@ import Footer from './components/footer';
 import Home from './components/home';
 import EventsSlide from './components/eventsslide';
 import Campusambassador from './components/campusambassador';
+import Squidgame from './components/Squidgame'
 import Busroute from './components/busroute';
 import Description from './components/Description';
 import Details from './components/Details';
@@ -36,6 +37,7 @@ root.render(
         <Navbar />
         <Home />
         <EventsSlide />
+        <Squidgame />
         <Campusambassador />
         <Busroute />
         <Footer />
